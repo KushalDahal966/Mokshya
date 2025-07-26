@@ -6,12 +6,15 @@
     <meta name="description" content="mokshya website" />
     <meta name="author" content="Kuhal Dahal and Team" />
     <meta name="robots" content="index, follow" />
-    <link rel="shortcut icon" href="src/images/logo/logo.png" type="image/x-icon">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="src/images/logo/logo.png" type="image/x-icon"/>
+    <!-- icons from font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- stylesheet -->
     <link rel="stylesheet" href="src/style.css" />
     <title>Mokshya</title>
   </head>
@@ -19,17 +22,21 @@
     <header>
       <!-- Nav Bar -->
       <nav>
-        <div class="w-full bg-cream-900 flex items-center justify-between px-6 py-4 md:h-[130px] md:px-[100px]">
+        <div
+          class="w-full bg-cream-900 flex items-center justify-between px-6 py-4 md:h-[100px] md:px-[70px] font-primary"
+        >
           <!-- Menu Button -->
           <a href="#">
-            <div class="h-[50px] w-[50px] md:w-[110px] bg-cream-800 rounded-full flex items-center justify-center gap-x-2">
+            <div
+              class="h-[50px] w-[50px] md:w-[110px] bg-cream-800 rounded-full flex items-center justify-center gap-x-2"
+            >
               <i class="fa-solid fa-bars text-green-900 text-sm"></i>
               <span class="hidden md:inline text-green-900 text-sm">MENU</span>
             </div>
           </a>
           <!-- Logo -->
           <a href="#">
-            <div class="w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] md:w-[130px] md:h-[130px]">
+            <div class="w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] md:w-[130px] md:h-[100px]">
               <img
                 src="src/images/logo/logo.png"
                 alt="logo of mokshya"
@@ -51,16 +58,43 @@
     <main>
       <div class="hero-section min-h-[400px] h-screen w-full bg-[url('/src/images/pictures/hero-image.jpeg')] bg-cover bg-no-repeat bg-center flex items-center justify-center">
         <div class="hero-text text-cream-900 text-center px-4">
-          <span class="block text-3xl font-mono md:text-4xl font-semibold leading-snug">
-            A Green Hug <br />
-            From The Nature
-          </span>
+          <span class="block font-secondary text-3xl md:text-6xl font-semibold leading-snug">
+            A green hug <br />
+            from the nature.</span>
         </div>
       </div>
     </main>
     <!-- About Section -->
-     <section>
+    <section>
+      <div class="bg-cream-900 w-full flex flex-col md:flex-row items-center justify-center px-4 py-8 gap-6">
+        <!-- About Image -->
+        <div
+          class="w-full max-w-[400px] h-[300px] sm:h-[350px] md:h-[400px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-no-repeat bg-cover bg-center rounded-[10px]">
+        </div>
 
-     </section>
+        <!-- About Text -->
+        <div class="w-full max-w-[400px] text-left font-primary">
+          <h2 class="text-[28px] md:text-[30px] font-bold mb-3 text-cream-100">About Mokshya</h2>
+          <span class="block text-[18px] sm:text-[22px] text-cream-100 mb-4 font-semibold">Every evening turns into a carnival</span>
+          <p class="text-[14px] text-cream-100 mb-3">
+            Mokshya, in English, means The Success which stands true as Mokshya
+            Garden is the synonym for celebration of life itself. Embraced by
+            lush greenery, the aesthetic setup stood as Nature welcomed you with
+            open arms and delicious flavors.
+          </p>
+          <p class="text-[14px] text-cream-100 mb-3">
+            From contemplating morning coffee to vibrant evening glass of
+            cocktail, from cozy quiet corners for quiet moments to lively
+            gatherings under the stars with crackling bonfires, we have got the
+            perfect setting for any mood, accompanied by soul-soothing live
+            music.
+          </p>
+          <p class="text-[14px] text-cream-100">
+            And the best part? We are just a leisurely ten-minute stroll from
+            Mukti Chowk, Birtamode.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

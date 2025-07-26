@@ -32,7 +32,12 @@ const config: Config = {
                 100: '#191918',
                 50: '#000000',
             },
-        }
+        },
+        fontFamily: {
+        primary: ['Poppins', 'sans-serif'],
+        secondary: ['Orelega One', 'cursive'],
+      },
+        
     },
     plugins: [],
 }
