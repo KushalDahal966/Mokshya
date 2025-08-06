@@ -37,7 +37,7 @@ const config: Config = {
         },
         fontFamily: {
             primary: ['Poppins', 'sans-serif'],
-            secondary: ['Orelega One', 'cursive'],
+            secondary: ['Orelega One'],
         },
 
     },

@@ -2,260 +2,500 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Mokshya Food Menu | Soups, Noodles & Sizzlers</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="src/images/logo/logo.png" type="image/x-icon" />
 
-    <meta name="description" content="Explore the delightful menu at Mokshya featuring creamy soups, satisfying noodles, and hot sizzlers. Book a table for a great dining experience!">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- stylesheet -->
     <script type="module" src="../main.ts"></script>
-
+    <title>Mokshya - Menu</title>
 </head>
 
-<body class="font-sans bg-gray-100">
+<body class="m-0 p-0 font-primary">
+    <!-- navbar -->
+    <header class="w-full z-10">
+        <nav
+            class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+            <!-- Menu Button -->
+            <a href="#" class="flex-shrink-0" id="menuButton">
+                <div
+                    class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
+                    <i class="fa-solid fa-bars text-green-900 text-xs md:text-sm lg:text-base"></i>
+                    <span class="hidden md:inline text-green-900 font-bold text-sm">MENU</span>
+                </div>
+            </a>
 
-    <header class="flex justify-between items-center px-8 py-4 bg-white shadow-md sticky top-0 z-50">
-        <div class="logo text-2xl font-bold text-gray-800"> Mokshya</div>
+            <!-- Logo -->
+            <a href="/my-project/index.html/#" class="flex-grow flex justify-center mx-2 md:mx-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 lg:w-[100px] lg:h-[100px] xl:w-[120px] xl:h-[120px]">
+                    <img src="../images/logo/logo.png" alt="logo of mokshya" class="w-full h-full object-contain" />
+                </div>
+            </a>
 
-        <button
-            class="book-btn bg-green-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-pink-600 font-semibold transition-colors duration-200">
-            Book a Table
-        </button>
+            <!-- Booking Button -->
+            <a href="booking.html" class="flex-shrink-0">
+                <div
+                    class="h-10 w-10 md:h-12 md:w-[150px] lg:h-[50px] bg-green-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 mr-2 md:mr-4 lg:mr-[50px]">
+                    <i class="fa-solid fa-utensils text-cream-900 text-xs md:text-sm lg:text-base"></i>
+                    <span class="hidden md:inline text-cream-900 font-bold text-sm">BOOK A TABLE</span>
+                </div>
+            </a>
+        </nav>
     </header>
 
-    <main class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 p-5">
-        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
-            aria-labelledby="soups-heading">
-            <h2 id="soups-heading" class="sr-only">Soups Menu</h2>
-            <div class="relative w-full h-[124px] overflow-hidden">
-                <img src="src/images/pictures/menu-image.jpg" alt="Assortment of warm and creamy soups"
-                    class="w-full h-full object-cover">
-                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold"
-                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Soups</div>
-            </div>
-            <ul class="p-5">
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="src/images/logo/logo.png" alt="Creamy Vegetable Soup"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Cream Soups of Vegetables</h3>
-                        <p class="text-sm text-gray-600 mb-1">Rich and creamy vegetable soup.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="Mokshya/src/images/pictures/menu-image.jpg" alt="Creamy Mushroom Soup"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Cream Soups of Mushroom</h3>
-                        <p class="text-sm text-gray-600 mb-1">Earthy and creamy mushroom soup.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-            </ul>
-        </section>
+    <!-- hero-section -->
+    <section>
+        <div
+            class="relative min-h-[400px] h-[400px] w-full bg-[url('/src/images/pictures/convenience-and-facility.jpeg')] bg-cover bg-no-repeat bg-center">
+            <!-- overlay for opacity-->
+            <div class="absolute inset-0 bg-[#000]/40"></div>
+        </div>
+    </section>
 
-        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
-            aria-labelledby="noodles-heading">
-            <h2 id="noodles-heading" class="sr-only">Noodles Menu</h2>
-            <div class="relative w-full h-[124px] overflow-hidden">
-                <img src="https://via.placeholder.com/373x124/FFD700/FFFFFF?text=Noodles"
-                    alt="Various noodle dishes, hot and fresh" class="w-full h-full object-cover">
-                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold text-shadow-lg"
-                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Noodles</div>
-            </div>
-
-            <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=WaiWai"
-                    alt="Wai Wai noodles, either fried or in soup"
-                    class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                <div class="flex-grow">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Wai Wai Fry/Soup</h3>
-                    <p class="text-sm text-gray-600 mb-1">Per Piece</p>
-                    <div class="text-lg text-yellow-500" aria-label="Rated 4 out of 5 stars">⭐⭐⭐⭐</div>
+    <!-- nagivation section -->
+    <div id="navigationLinks"
+        class="h-[100vh] w-full max-w-[600px] fixed inset-0 bg-cream-800 hidden z-50 overflow-y-auto">
+        <!-- Top Bar -->
+        <div
+            class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+            <!-- Close Button -->
+            <a href="#" id="closeMenu">
+                <div
+                    class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
+                    <i class="fa-solid fa-xmark text-green-900 text-xs md:text-sm lg:text-base"></i>
+                    <span class="hidden md:inline text-green-900 font-bold text-sm">CLOSE</span>
                 </div>
-            </li>
-            <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=Egg"
-                    alt="Wai Wai noodle soup with an egg"
-                    class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                <div class="flex-grow">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Wai Wai soup with egg</h3>
-                    <p class="text-sm text-gray-600 mb-1">Classic Wai Wai soup enhanced with an egg, per piece.</p>
-                    <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                </div>
-            </li>
-            </ul>
-        </section>
+            </a>
+        </div>
 
-        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
-            aria-labelledby="sizzlers-heading">
-            <h2 id="sizzlers-heading" class="sr-only">Sizzlers Menu</h2>
-            <div class="relative w-full h-[124px] overflow-hidden">
-                <img src="https://via.placeholder.com/373x124/CD5C5C/FFFFFF?text=Sizzlers"
-                    alt="A sizzling hot chicken platter" class="w-full h-full object-cover">
-                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold text-shadow-lg"
-                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Sizzlers</div>
-            </div>
-            <ul class="p-5">
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/F08080/FFFFFF?text=Chicken"
-                        alt="Chicken sizzler with rice, fries, and vegetables"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Chicken Sizzler</h3>
-                        <p class="text-sm text-gray-600 mb-1">Served with rice, fries, and sautéed veggies.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
+        <!-- Navigation Links -->
+        <div class="px-4 sm:px-6 lg:px-8 ml-[50px]">
+            <h4 class="text-[18px] sm:text-[20px] md:text-[22px] text-green-900 font-primary mb-8 mt-6">
+                NAVIGATION
+            </h4>
+            <ul class="space-y-4">
+                <li>
+                    <a href="/my-project/index.html/#aboutSection"
+                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">ABOUT
+                        MOKSHYA</a>
+                </li>
+                <li>
+                    <a href="/my-project/index.html/#accomodationSection"
+                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">ACCOMMODATION</a>
+                </li>
+                <li>
+                    <a href="/my-project/index.html/#foodAndDrinksSection"
+                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">FOOD &
+                        DRINKS</a>
+                </li>
+                <li>
+                    <a href="#" class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">OUR
+                        MENU</a>
                 </li>
             </ul>
-        </section>
+
+            <hr class="border-green-900 my-8" />
+
+            <!-- Location Info -->
+            <h4 class="text-[18px] sm:text-[20px] md:text-[22px] text-green-900 font-primary mb-4">
+                LOCATION
+            </h4>
+            <div class="flex items-start gap-3 mb-2">
+                <i class="fa-solid fa-location-dot text-green-900 mt-1"></i>
+                <span class="font-primary text-[14px] text-green-900">Opposite Birta City Hospital, Birtamode
+                    Jhapa</span>
+            </div>
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-phone text-green-900 mt-1"></i>
+                <span class="font-primary text-[14px] text-green-900">023451143</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu items -->
+    <main class="w-full bg-cream-900 flex flex-col items-center py-10 px-4 gap-5">
+        <!-- heading -->
+        <div class="text-center font-primary">
+            <h1 class="text-[14px] text-green-800 font-semibold uppercase">Mokshya Food Menu</h1>
+            <span class="font-primary text-green-900 text-[24px] sm:text-[28px] md:text-[32px] font-bold">OUR BEST FOOD
+                & BEVERAGE MENU</span>
+        </div>
+
+        <!-- menu items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+            <!-- firts item -->
+            <div class="h-auto w-full max-w-[300px] bg-cream-800 rounded-[10px] shadow-md overflow-hidden">
+                <div
+                    class="h-[120px] w-full bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-t-[10px] flex items-center pl-4">
+                    <h2 class="text-[20px] sm:text-[22px] text-cream-900 font-primary font-semibold">
+                        Pizza
+                    </h2>
+                </div>
+                <!-- types of first item -->
+                <div class="p-4 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Veg Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Cheese Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Paneer Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second  item -->
+            <div class="h-auto w-full max-w-[300px] bg-cream-800 rounded-[10px] shadow-md overflow-hidden">
+                <div
+                    class="h-[120px] w-full bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-t-[10px] flex items-center pl-4">
+                    <h2 class="text-[20px] sm:text-[22px] text-cream-900 font-primary font-semibold">
+                        Pizza
+                    </h2>
+                </div>
+                <!-- types of second item -->
+                <div class="p-4 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Veg Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Cheese Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Paneer Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third item -->
+            <div class="h-auto w-full max-w-[300px] bg-cream-800 rounded-[10px] shadow-md overflow-hidden">
+                <div
+                    class="h-[120px] w-full bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-t-[10px] flex items-center pl-4">
+                    <h2 class="text-[20px] sm:text-[22px] text-cream-900 font-primary font-semibold">
+                        Pizza
+                    </h2>
+                </div>
+                <!-- types of third item -->
+                <div class="p-4 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Veg Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Cheese Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Paneer Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fourth item -->
+            <div class="h-auto w-full max-w-[300px] bg-cream-800 rounded-[10px] shadow-md overflow-hidden">
+                <div
+                    class="h-[120px] w-full bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-t-[10px] flex items-center pl-4">
+                    <h2 class="text-[20px] sm:text-[22px] text-cream-900 font-primary font-semibold">
+                        Pizza
+                    </h2>
+                </div>
+                <!-- types of forth item -->
+                <div class="p-4 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Veg Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Cheese Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Paneer Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fifth item -->
+            <div class="h-auto w-full max-w-[300px] bg-cream-800 rounded-[10px] shadow-md overflow-hidden">
+                <div
+                    class="h-[120px] w-full bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-t-[10px] flex items-center pl-4">
+                    <h2 class="text-[20px] sm:text-[22px] text-cream-900 font-primary font-semibold">
+                        Pizza
+                    </h2>
+                </div>
+                <!-- types of fifth item -->
+                <div class="p-4 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Veg Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Cheese Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Paneer Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sixth item -->
+            <div class="h-auto w-full max-w-[300px] bg-cream-800 rounded-[10px] shadow-md overflow-hidden">
+                <div
+                    class="h-[120px] w-full bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-t-[10px] flex items-center pl-4">
+                    <h2 class="text-[20px] sm:text-[22px] text-cream-900 font-primary font-semibold">
+                        Pizza
+                    </h2>
+                </div>
+                <!-- types of sixth item -->
+                <div class="p-4 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Veg Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Cheese Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <hr class="border-green-900" />
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="h-[50px] w-[50px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full">
+                        </div>
+                        <div>
+                            <h3 class="text-green-900 font-secondary font-semibold">
+                                Paneer Pizza
+                            </h3>
+                            <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <main class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6 p-5">
-        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
-            aria-labelledby="soups-heading">
-            <h2 id="soups-heading" class="sr-only">Pizza Menu</h2>
-            <div class="relative w-full h-[124px] overflow-hidden">
-                <img src="/src/images/pictures/menu-image.jpg" alt="Assortment of warm and creamy soups"
-                    class="w-full h-full object-cover">
-                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold"
-                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Pizza</div>
+    <!-- footer  -->
+    <footer>
+        <div class="bg-cream-900 w-full px-4 pb-10">
+            <!-- Logo -->
+            <div class="flex justify-center mb-8">
+                <div class="h-[100px] w-[100px] bg-[url('/src/images/logo/logo.png')] bg-cover bg-center"></div>
             </div>
-            <ul class="p-5">
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/B0E0E6/FFFFFF?text=Veg" alt="Creamy Vegetable Soup"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Veg Pizza</h3>
-                        <p class="text-sm text-gray-600 mb-1">Veg Pizza.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/B0E0E6/FFFFFF?text=Mushroom" alt="Creamy Mushroom Soup"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Cheese Pizza</h3>
-                        <p class="text-sm text-gray-600 mb-1">Cheese Pizza.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/B0E0E6/FFFFFF?text=Mushroom" alt="Creamy Mushroom Soup"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Musroom Pizza</h3>
-                        <p class="text-sm text-gray-600 mb-1">Musroom Pizza.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-            </ul>
-        </section>
 
-        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
-            aria-labelledby="noodles-heading">
-            <h2 id="noodles-heading" class="sr-only">Burger Menu</h2>
-            <div class="relative w-full h-[124px] overflow-hidden">
-                <img src="https://via.placeholder.com/373x124/FFD700/FFFFFF?text=Noodles"
-                    alt="Various noodle dishes, hot and fresh" class="w-full h-full object-cover">
-                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold"
-                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Burger</div>
+            <!-- Footer Links Section -->
+            <div class="w-full flex justify-around">
+
+                <!-- EAT -->
+                <div>
+                    <h4 class="font-bold mb-2">EAT</h4>
+                    <ul class="space-y-1">
+                        <li><a href="menu.html" class="hover:text-green-950">Menu</a></li>
+                        <li><a href="/my-project/index.html/#foodAndDrinksSection" class="hover:text-green-950">Food &
+                                Drinks</a></li>
+                        <li><a href="#" class="hover:text-green-950">Book a Table</a></li>
+                    </ul>
+                </div>
+
+                <!-- AMENITIES -->
+                <div>
+                    <h4 class="font-bold mb-2">AMENITIES</h4>
+                    <ul class="space-y-1">
+                        <li><a href="/my-project/index.html/#accomodationSection"
+                                class="hover:text-green-950">Accommodation</a></li>
+                        <li><a href="/my-project/index.html/#facilitySection"
+                                class="hover:text-green-950">Facilities</a></li>
+                    </ul>
+                </div>
+
+                <!-- EXPLORE -->
+                <div>
+                    <h4 class="font-bold mb-2">EXPLORE</h4>
+                    <ul class="space-y-1">
+                        <li><a href="/my-project/index.html/#aboutSection" class="hover:text-green-950">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- LOCATION -->
+                <div>
+                    <h4 class="font-bold mb-2">LOCATION</h4>
+                    <ul class="space-y-1">
+                        <li>Birtamode, Jhapa, Nepal</li>
+                        <li>+977 9800000000</li>
+                        <li>+977 9800002222</li>
+                    </ul>
+                </div>
             </div>
-            <ul class="p-5">
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=WaiWai"
-                        alt="Wai Wai noodles, either fried or in soup"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">loaded Cheese Burger</h3>
-                        <p class="text-sm text-gray-600 mb-1">loaded Cheese Burger</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 4 out of 5 stars">⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=Egg"
-                        alt="Wai Wai noodle soup with an egg"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">loaded Chicken Burger</h3>
-                        <p class="text-sm text-gray-600 mb-1">loaded Chicken Burger.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=WaiWai"
-                        alt="Wai Wai noodles, either fried or in soup"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Extra Cheese</h3>
-                        <p class="text-sm text-gray-600 mb-1">Extra Cheese</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 4 out of 5 stars">⭐⭐⭐⭐</div>
-                    </div>
-                </li>
 
-
-            </ul>
-        </section>
-
-        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
-            aria-labelledby="sizzlers-heading">
-            <h2 id="sizzlers-heading" class="sr-only">Sandwiches Menu</h2>
-            <div class="relative w-full h-[124px] overflow-hidden">
-                <img src="https://via.placeholder.com/373x124/CD5C5C/FFFFFF?text=Sizzlers"
-                    alt="A sizzling hot chicken platter" class="w-full h-full object-cover">
-                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold"
-                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Sandwiches</div>
+            <!-- Social Media Icons -->
+            <div class="flex justify-center items-center gap-6 mt-8">
+                <a href="https://www.facebook.com/mokshyabirtamode" target="_blank"><i
+                        class="fa-brands fa-facebook text-green-900 text-lg hover:scale-110 transition"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-green-900 text-lg hover:scale-110 transition"></i></a>
+                <a href="https://www.tiktok.com/@mokshya_restaurant?_t=ZS-8yb3icgJIri&_r=1" target="_blank"><i
+                        class="fa-brands fa-tiktok text-green-900 text-lg hover:scale-110 transition"></i></a>
             </div>
-            <ul class="p-5">
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/F08080/FFFFFF?text=Chicken"
-                        alt="Chicken sizzler with rice, fries, and vegetables"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Vegetable Sandwiches</h3>
-                        <p class="text-sm text-gray-600 mb-1">Vegetable Sandwiches.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/F08080/FFFFFF?text=Chicken"
-                        alt="Chicken sizzler with rice, fries, and vegetables"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Egg Sandwiches</h3>
-                        <p class="text-sm text-gray-600 mb-1">Egg Sandwiches.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
-                    <img src="https://via.placeholder.com/60x60/F08080/FFFFFF?text=Chicken"
-                        alt="Chicken sizzler with rice, fries, and vegetables"
-                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Tomato Sandwiches</h3>
-                        <p class="text-sm text-gray-600 mb-1">Tomato Sandwiches.</p>
-                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
+        </div>
+    </footer>
 
-    <style>
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-        }
-    </style>
+    <!-- Dont know what to name it -->
+    <div class="w-full bg-green-900 text-cream-900 flex flex-col items-center justify-center text-xs py-4 text-center">
+        <span>© Mokshya Restaurant & Bar 2024. All Rights Reserved</span>
+        <span>Created by <a href=""><b>Kta Haru</b></a></span>
+    </div>
+
+    <script src="../script.js"></script>
 </body>
 
 </html>

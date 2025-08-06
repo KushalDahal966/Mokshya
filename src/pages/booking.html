@@ -39,7 +39,7 @@
       </a>
 
       <!-- Logo -->
-      <a href="#" class="flex-grow flex justify-center mx-2 md:mx-4">
+      <a href="/my-project/index.html/#" class="flex-grow flex justify-center mx-2 md:mx-4">
         <div class="w-16 h-16 md:w-20 md:h-20 lg:w-[100px] lg:h-[100px] xl:w-[120px] xl:h-[120px]">
           <img src="../images/logo/logo.png" alt="logo of mokshya" class="w-full h-full object-contain" />
         </div>
@@ -56,9 +56,69 @@
     </nav>
   </header>
 
+  <!-- nagivation section -->
+    <div id="navigationLinks"
+        class="h-[100vh] w-full max-w-[600px] fixed inset-0 bg-cream-800 hidden z-50 overflow-y-auto">
+        <!-- Top Bar -->
+        <div
+            class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+            <!-- Close Button -->
+            <a href="#" id="closeMenu">
+                <div
+                    class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
+                    <i class="fa-solid fa-xmark text-green-900 text-xs md:text-sm lg:text-base"></i>
+                    <span class="hidden md:inline text-green-900 font-bold text-sm">CLOSE</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="px-4 sm:px-6 lg:px-8 ml-[50px]">
+            <h4 class="text-[18px] sm:text-[20px] md:text-[22px] text-green-900 font-primary mb-8 mt-6">
+                NAVIGATION
+            </h4>
+            <ul class="space-y-4">
+                <li>
+                    <a href="/my-project/index.html/#aboutSection"
+                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">ABOUT
+                        MOKSHYA</a>
+                </li>
+                <li>
+                    <a href="/my-project/index.html/#accomodationSection"
+                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">ACCOMMODATION</a>
+                </li>
+                <li>
+                    <a href="/my-project/index.html/#foodAndDrinksSection"
+                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">FOOD &
+                        DRINKS</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">OUR MENU</a>
+                </li>
+            </ul>
+
+            <hr class="border-green-900 my-8" />
+
+            <!-- Location Info -->
+            <h4 class="text-[18px] sm:text-[20px] md:text-[22px] text-green-900 font-primary mb-4">
+                LOCATION
+            </h4>
+            <div class="flex items-start gap-3 mb-2">
+                <i class="fa-solid fa-location-dot text-green-900 mt-1"></i>
+                <span class="font-primary text-[14px] text-green-900">Opposite Birta City Hospital, Birtamode Jhapa</span>
+            </div>
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-phone text-green-900 mt-1"></i>
+                <span class="font-primary text-[14px] text-green-900">023451143</span>
+            </div>
+        </div>
+    </div>
+
+
   <main>
-    <div class="h-[100vh] w-full bg-green-900 flex justify-center items-center px-4 py-10">
-      <section class="h-[660px] w-[900px] bg-cream-800 rounded-xl shadow-lg text-center flex px-16 py-15 gap-10 my-10">
+    <div class="w-full bg-green-900 flex justify-center items-center px-4 py-10">
+      <section class="h-[660px] w-[900px] bg-cream-900 rounded-xl shadow-lg text-center flex px-16 py-15 gap-10 my-10">
 
         <!-- heading and text -->
         <div class="w-1/2 h-full flex flex-col text-left pr-8">
@@ -88,11 +148,19 @@
               <input type="text" name="" id="name" placeholder="Full Name"
                 class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
             </div>
-            <div class="text-left">
-              <label for="date" class="block text-gray-700 font-semibold mb-1">Date</label>
-              <input type="date" name="" id="date"
-                class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+            <div class="flex gap-4">
+              <div class="w-1/2 text-left">
+                <label for="checkin" class="block text-gray-700 font-semibold mb-1">Check-In</label>
+                <input type="date" id="checkin"
+                  class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              <div class="w-1/2 text-left">
+                <label for="checkout" class="block text-gray-700 font-semibold mb-1">Check-Out</label>
+                <input type="date" id="checkout"
+                  class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
             </div>
+
             <div class="text-left">
               <label for="phoneNumber" class="block text-gray-700 font-semibold mb-1">Phone Number</label>
               <input type="tel" name="" id="phoneNumber" placeholder="Phone Number"
@@ -104,9 +172,14 @@
                 class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
             </div>
             <div class="text-left">
-              <label for="tableNumber" class="block text-gray-700 font-semibold mb-1">Table Number</label>
-              <input type="number" name="" id="tableNumber" placeholder="Table Number"
+              <label for="roomType" class="block text-gray-700 font-semibold mb-1">Type of Room</label>
+              <input list="typeOfRoom" name="" id="roomType" placeholder="Type of Room"
                 class="h-[50px] w-full p-2 rounded-[10px] bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+              <datalist id="typeOfRoom">
+                <option value="Junior Suite"></option>
+                <option value="Superior Deluxe Room"></option>
+                <option value="Superior Deluxe Room With Balcony"></option>
+              </datalist>
             </div>
           </div>
 
@@ -141,7 +214,7 @@
           <h4 class="font-bold mb-2">EAT</h4>
           <ul class="space-y-1">
             <li><a href="#menuSection" class="hover:text-green-950">Menu</a></li>
-            <li><a href="#foodAndDrinksSection" class="hover:text-green-950">Food & Drinks</a></li>
+            <li><a href="/my-project/index.html/#foodAndDrinksSection" class="hover:text-green-950">Food & Drinks</a></li>
             <li><a href="#" class="hover:text-green-950">Book a Table</a></li>
           </ul>
         </div>
@@ -150,8 +223,8 @@
         <div>
           <h4 class="font-bold mb-2">AMENITIES</h4>
           <ul class="space-y-1">
-            <li><a href="#accomodationSection" class="hover:text-green-950">Accommodation</a></li>
-            <li><a href="#facilitySection" class="hover:text-green-950">Facilities</a></li>
+            <li><a href="/my-project/index.html/#accomodationSection" class="hover:text-green-950">Accommodation</a></li>
+            <li><a href="/my-project/index.html/#facilitySection" class="hover:text-green-950">Facilities</a></li>
           </ul>
         </div>
 
@@ -159,7 +232,7 @@
         <div>
           <h4 class="font-bold mb-2">EXPLORE</h4>
           <ul class="space-y-1">
-            <li><a href="#aboutSection" class="hover:text-green-950">About Us</a></li>
+            <li><a href="/my-project/index.html/#aboutSection" class="hover:text-green-950">About Us</a></li>
           </ul>
         </div>
 
@@ -191,5 +264,6 @@
     <span>Created by <a href=""><b>Kta Haru</b></a></span>
   </div>
 
+  <script src="../script.js"></script>
 </body>
 </html>

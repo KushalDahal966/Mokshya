@@ -31,6 +31,7 @@
   <!-- navbar -->
   <header class="w-full z-10">
     <nav class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+
       <!-- Menu Button -->
       <a href="#" class="flex-shrink-0" id="menuButton">
         <div
@@ -48,7 +49,7 @@
       </a>
 
       <!-- Booking Button -->
-      <a href="src/pages/booking.html" class="flex-shrink-0">
+      <a href="src/pages/booking.html" target="_blank" class="flex-shrink-0">
         <div
           class="h-10 w-10 md:h-12 md:w-[150px] lg:h-[50px] bg-green-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 mr-2 md:mr-4 lg:mr-[50px]">
           <i class="fa-solid fa-utensils text-cream-900 text-xs md:text-sm lg:text-base"></i>
@@ -69,7 +70,7 @@
       <!-- hero-text -->
       <div class="hero-text text-cream-900 text-left px-4 z-10">
         <span
-          class="block font-secondary text-[28px] sm:text-[36px] md:text-[44px] lg:text-[56px] xl:text-[64px] leading-[1.1] text-center uppercase">
+          class="block font-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-center uppercase">
           Wrapped in <br>
           nature's embrace
         </span>
@@ -171,7 +172,7 @@
 
       <!-- Section heading -->
       <div class="w-full text-center mb-10">
-        <span class="font-primary text-[14px] text-green-50 block">Choose Delicious</span>
+        <span class="font-primary text-[14px] text-green-800 block">Choose Delicious</span>
         <h3 class="font-primary text-[30px] font-bold text-green-900 inline-block">Popular Menu</h3>
       </div>
 
@@ -373,7 +374,7 @@
 
         <!-- Image -->
         <div
-          class="w-full max-w-[900px] h-[300px] bg-[url('/src/images/pictures/convenience-and-facility.jpeg')] bg-cover bg-no-repeat bg-center rounded-[10px]">
+          class="w-full max-w-[900px] h-[300px] bg-[url('/src/images/pictures/hero-image.jpeg')] bg-cover bg-no-repeat bg-center rounded-[10px]">
         </div>
       </div>
     </section>
@@ -401,7 +402,7 @@
 
         <!-- heading -->
         <div>
-          <h3 class="font-primary text-[14px] text-green-800 uppercase tracking-widest">Reviews</h3>
+          <h3 class="font-primary text-[14px] text-green-800 uppercase">Reviews</h3>
           <span class="block font-primary text-green-950 text-[24px] sm:text-[28px] md:text-[32px] font-bold">
             What Our Customers Say
           </span>
@@ -447,7 +448,6 @@
 
       <!-- Food Images -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <!-- Repeat for 9 images -->
         <div
           class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
         </div>
@@ -496,7 +496,7 @@
                 </button>
               </div>
               <div class="flex flex-col gap-3 text-amber-900">
-                <span><b class="tracking-[5px] text-green-700">Breakfast:</b> Morning - 7am to 12 noon.</span>
+                <span><b class="tracking-[5px] text-green-700">Breakfast:</b> Morning - 7am to 12 PM.</span>
                 <span><b class="tracking-[5px] text-green-700">Lunch:</b> 12 PM to 2 PM.</span>
                 <span><b class="tracking-[5px] text-green-700">Dinner:</b> Evening - 6pm to 10pm.</span>
               </div>
@@ -555,7 +555,7 @@
         </div>
 
         <!-- Footer Links Section -->
-        <div class="w-full flex justify-around">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center place-items-center">
 
           <!-- EAT -->
           <div>
@@ -590,7 +590,6 @@
             <ul class="space-y-1">
               <li>Birtamode, Jhapa, Nepal</li>
               <li>+977 9800000000</li>
-              <li>+977 9800002222</li>
             </ul>
           </div>
         </div>
@@ -614,5 +613,4 @@
 
     <script src="src/script.js"></script>
 </body>
-
 </html>
