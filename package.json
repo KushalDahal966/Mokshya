@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "typescript": "~5.8.3",
-    "vite": "^7.0.4"
+    "vite": "^7.0.4",
+    "vite-plugin-imagemin": "^0.4.0"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",

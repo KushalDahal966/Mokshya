@@ -2,22 +2,24 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
     content: [
         './index.html',
+        './src/pages/menu.html',
+        './src/pages/booking.html',
+        './src/pages/ktaHaru.html',
         './src/**/*.{js,ts,jsx,tsx,vue}',
     ],
     theme: {
         colors: {
             green: {
+                50: '#E6E9E9',
+                100: '#CDD3D2',
+                200: '#B3BDBC',
+                300: '#9AA7A5',
+                400: '#81918F',
+                500: '#687B79',
+                600: '#4F6562',
+                700: '#354F4C',
+                800: '#1C3935',
                 900: '#03231F',
-                800: '#03201C',
-                700: '#021C19',
-                600: '#021916',
-                500: '#021513',
-                400: '#021210',
-                300: '#010E0C',
-                200: '#010A09',
-                150: '#010706',
-                100: '#000303',
-                50: '#000000',
             },
             cream: {
                 900: '#FAF6F3',
@@ -34,10 +36,10 @@ const config: Config = {
             },
         },
         fontFamily: {
-        primary: ['Poppins', 'sans-serif'],
-        secondary: ['Orelega One', 'cursive'],
-      },
-        
+            primary: ['Poppins', 'sans-serif'],
+            secondary: ['Orelega One', 'cursive'],
+        },
+
     },
     plugins: [],
 }

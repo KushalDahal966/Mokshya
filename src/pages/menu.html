@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mokshya Food Menu | Soups, Noodles & Sizzlers</title>
+
+    <meta name="description" content="Explore the delightful menu at Mokshya featuring creamy soups, satisfying noodles, and hot sizzlers. Book a table for a great dining experience!">
+
+    <script type="module" src="../main.ts"></script>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+
+    <header class="flex justify-between items-center px-8 py-4 bg-white shadow-md sticky top-0 z-50">
+        <div class="logo text-2xl font-bold text-gray-800"> Mokshya</div>
+
+        <button
+            class="book-btn bg-green-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-pink-600 font-semibold transition-colors duration-200">
+            Book a Table
+        </button>
+    </header>
+
+    <main class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 p-5">
+        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
+            aria-labelledby="soups-heading">
+            <h2 id="soups-heading" class="sr-only">Soups Menu</h2>
+            <div class="relative w-full h-[124px] overflow-hidden">
+                <img src="src/images/pictures/menu-image.jpg" alt="Assortment of warm and creamy soups"
+                    class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold"
+                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Soups</div>
+            </div>
+            <ul class="p-5">
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="src/images/logo/logo.png" alt="Creamy Vegetable Soup"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Cream Soups of Vegetables</h3>
+                        <p class="text-sm text-gray-600 mb-1">Rich and creamy vegetable soup.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="Mokshya/src/images/pictures/menu-image.jpg" alt="Creamy Mushroom Soup"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Cream Soups of Mushroom</h3>
+                        <p class="text-sm text-gray-600 mb-1">Earthy and creamy mushroom soup.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
+            aria-labelledby="noodles-heading">
+            <h2 id="noodles-heading" class="sr-only">Noodles Menu</h2>
+            <div class="relative w-full h-[124px] overflow-hidden">
+                <img src="https://via.placeholder.com/373x124/FFD700/FFFFFF?text=Noodles"
+                    alt="Various noodle dishes, hot and fresh" class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold text-shadow-lg"
+                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Noodles</div>
+            </div>
+
+            <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=WaiWai"
+                    alt="Wai Wai noodles, either fried or in soup"
+                    class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                <div class="flex-grow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Wai Wai Fry/Soup</h3>
+                    <p class="text-sm text-gray-600 mb-1">Per Piece</p>
+                    <div class="text-lg text-yellow-500" aria-label="Rated 4 out of 5 stars">⭐⭐⭐⭐</div>
+                </div>
+            </li>
+            <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=Egg"
+                    alt="Wai Wai noodle soup with an egg"
+                    class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                <div class="flex-grow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Wai Wai soup with egg</h3>
+                    <p class="text-sm text-gray-600 mb-1">Classic Wai Wai soup enhanced with an egg, per piece.</p>
+                    <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </li>
+            </ul>
+        </section>
+
+        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
+            aria-labelledby="sizzlers-heading">
+            <h2 id="sizzlers-heading" class="sr-only">Sizzlers Menu</h2>
+            <div class="relative w-full h-[124px] overflow-hidden">
+                <img src="https://via.placeholder.com/373x124/CD5C5C/FFFFFF?text=Sizzlers"
+                    alt="A sizzling hot chicken platter" class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold text-shadow-lg"
+                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Sizzlers</div>
+            </div>
+            <ul class="p-5">
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/F08080/FFFFFF?text=Chicken"
+                        alt="Chicken sizzler with rice, fries, and vegetables"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Chicken Sizzler</h3>
+                        <p class="text-sm text-gray-600 mb-1">Served with rice, fries, and sautéed veggies.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <main class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6 p-5">
+        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
+            aria-labelledby="soups-heading">
+            <h2 id="soups-heading" class="sr-only">Pizza Menu</h2>
+            <div class="relative w-full h-[124px] overflow-hidden">
+                <img src="/src/images/pictures/menu-image.jpg" alt="Assortment of warm and creamy soups"
+                    class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold"
+                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Pizza</div>
+            </div>
+            <ul class="p-5">
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/B0E0E6/FFFFFF?text=Veg" alt="Creamy Vegetable Soup"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Veg Pizza</h3>
+                        <p class="text-sm text-gray-600 mb-1">Veg Pizza.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/B0E0E6/FFFFFF?text=Mushroom" alt="Creamy Mushroom Soup"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Cheese Pizza</h3>
+                        <p class="text-sm text-gray-600 mb-1">Cheese Pizza.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/B0E0E6/FFFFFF?text=Mushroom" alt="Creamy Mushroom Soup"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Musroom Pizza</h3>
+                        <p class="text-sm text-gray-600 mb-1">Musroom Pizza.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
+            aria-labelledby="noodles-heading">
+            <h2 id="noodles-heading" class="sr-only">Burger Menu</h2>
+            <div class="relative w-full h-[124px] overflow-hidden">
+                <img src="https://via.placeholder.com/373x124/FFD700/FFFFFF?text=Noodles"
+                    alt="Various noodle dishes, hot and fresh" class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold"
+                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Burger</div>
+            </div>
+            <ul class="p-5">
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=WaiWai"
+                        alt="Wai Wai noodles, either fried or in soup"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">loaded Cheese Burger</h3>
+                        <p class="text-sm text-gray-600 mb-1">loaded Cheese Burger</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 4 out of 5 stars">⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=Egg"
+                        alt="Wai Wai noodle soup with an egg"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">loaded Chicken Burger</h3>
+                        <p class="text-sm text-gray-600 mb-1">loaded Chicken Burger.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/FFDEAD/FFFFFF?text=WaiWai"
+                        alt="Wai Wai noodles, either fried or in soup"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Extra Cheese</h3>
+                        <p class="text-sm text-gray-600 mb-1">Extra Cheese</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 4 out of 5 stars">⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </section>
+
+        <section class="w-full max-w-sm border border-gray-200 rounded-lg shadow-md bg-white overflow-hidden"
+            aria-labelledby="sizzlers-heading">
+            <h2 id="sizzlers-heading" class="sr-only">Sandwiches Menu</h2>
+            <div class="relative w-full h-[124px] overflow-hidden">
+                <img src="https://via.placeholder.com/373x124/CD5C5C/FFFFFF?text=Sizzlers"
+                    alt="A sizzling hot chicken platter" class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold"
+                    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Sandwiches</div>
+            </div>
+            <ul class="p-5">
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/F08080/FFFFFF?text=Chicken"
+                        alt="Chicken sizzler with rice, fries, and vegetables"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Vegetable Sandwiches</h3>
+                        <p class="text-sm text-gray-600 mb-1">Vegetable Sandwiches.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/F08080/FFFFFF?text=Chicken"
+                        alt="Chicken sizzler with rice, fries, and vegetables"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Egg Sandwiches</h3>
+                        <p class="text-sm text-gray-600 mb-1">Egg Sandwiches.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+                <li class="flex items-center mb-4 pb-4 border-b border-dashed border-gray-200 last:border-b-0">
+                    <img src="https://via.placeholder.com/60x60/F08080/FFFFFF?text=Chicken"
+                        alt="Chicken sizzler with rice, fries, and vegetables"
+                        class="w-16 h-16 object-cover rounded-full mr-4 border border-gray-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Tomato Sandwiches</h3>
+                        <p class="text-sm text-gray-600 mb-1">Tomato Sandwiches.</p>
+                        <div class="text-lg text-yellow-500" aria-label="Rated 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</body>
+
+</html>
