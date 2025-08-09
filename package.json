@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-webp": "^8.0.0",
     "typescript": "~5.8.3",
     "vite": "^7.0.4",
-    "vite-plugin-imagemin": "^0.4.0"
+    "vite-plugin-imagemin": "^0.4.6"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",

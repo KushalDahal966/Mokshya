@@ -28,169 +28,163 @@
 <body>
   <!-- navbar -->
   <header class="w-full">
-    <nav class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+    <nav class="h-16 md:h-24 lg:h-[100px] w-full flex items-center justify-between px-4 sm:px-6 lg:px-8">
+
       <!-- Menu Button -->
-      <a href="#" class="flex-shrink-0" id="menuButton">
+      <a href="src/pages/menu.html"  id="menuButton">
         <div
-          class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
+          class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-12">
           <i class="fa-solid fa-bars text-green-900 text-xs md:text-sm lg:text-base"></i>
-          <span class="hidden md:inline text-green-900 font-bold text-sm">MENU</span>
+          <span class="hidden md:inline text-green-900 text-sm font-semibold">MENU</span>
         </div>
       </a>
 
       <!-- Logo -->
-      <a href="/my-project/index.html/#" class="flex-grow flex justify-center mx-2 md:mx-4">
+      <a href="/my-project/index.html" class="">
         <div class="w-16 h-16 md:w-20 md:h-20 lg:w-[100px] lg:h-[100px] xl:w-[120px] xl:h-[120px]">
           <img src="../images/logo/logo.png" alt="logo of mokshya" class="w-full h-full object-contain" />
         </div>
       </a>
 
       <!-- Booking Button -->
-      <a href="#" class="flex-shrink-0">
+      <a href="/my-project/index.html/#bookingForm" >
         <div
-          class="h-10 w-10 md:h-12 md:w-[150px] lg:h-[50px] bg-green-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 mr-2 md:mr-4 lg:mr-[50px]">
+          class="h-10 w-10 md:h-12 md:w-[150px] lg:h-[50px] bg-green-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 mr-2 md:mr-4 lg:mr-12">
           <i class="fa-solid fa-utensils text-cream-900 text-xs md:text-sm lg:text-base"></i>
-          <span class="hidden md:inline text-cream-900 font-bold text-sm">BOOK A TABLE</span>
+          <span class="hidden md:inline text-cream-900 text-sm font-semibold">FULL MENU</span>
         </div>
       </a>
     </nav>
   </header>
 
   <!-- nagivation section -->
-    <div id="navigationLinks"
-        class="h-[100vh] w-full max-w-[600px] fixed inset-0 bg-cream-800 hidden z-50 overflow-y-auto">
-        <!-- Top Bar -->
+  <div id="navigationLinks"
+    class="w-full max-w-[600px] fixed inset-0 bg-cream-800 hidden z-50 overflow-y-auto h-[90vh] sm:h-[95vh] md:h-[100vh]">
+
+    <!-- Top Bar -->
+    <div class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+      <!-- Close Button -->
+      <a href="#" id="closeMenu">
         <div
-            class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
-            <!-- Close Button -->
-            <a href="#" id="closeMenu">
-                <div
-                    class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
-                    <i class="fa-solid fa-xmark text-green-900 text-xs md:text-sm lg:text-base"></i>
-                    <span class="hidden md:inline text-green-900 font-bold text-sm">CLOSE</span>
-                </div>
-            </a>
+          class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
+          <i class="fa-solid fa-xmark text-green-900 text-xs md:text-sm lg:text-base"></i>
+          <span class="hidden md:inline text-green-900 font-bold text-sm">CLOSE</span>
         </div>
-
-        <!-- Navigation Links -->
-        <div class="px-4 sm:px-6 lg:px-8 ml-[50px]">
-            <h4 class="text-[18px] sm:text-[20px] md:text-[22px] text-green-900 font-primary mb-8 mt-6">
-                NAVIGATION
-            </h4>
-            <ul class="space-y-4">
-                <li>
-                    <a href="/my-project/index.html/#aboutSection"
-                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">ABOUT
-                        MOKSHYA</a>
-                </li>
-                <li>
-                    <a href="/my-project/index.html/#accomodationSection"
-                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">ACCOMMODATION</a>
-                </li>
-                <li>
-                    <a href="/my-project/index.html/#foodAndDrinksSection"
-                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">FOOD &
-                        DRINKS</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">OUR MENU</a>
-                </li>
-            </ul>
-
-            <hr class="border-green-900 my-8" />
-
-            <!-- Location Info -->
-            <h4 class="text-[18px] sm:text-[20px] md:text-[22px] text-green-900 font-primary mb-4">
-                LOCATION
-            </h4>
-            <div class="flex items-start gap-3 mb-2">
-                <i class="fa-solid fa-location-dot text-green-900 mt-1"></i>
-                <span class="font-primary text-[14px] text-green-900">Opposite Birta City Hospital, Birtamode Jhapa</span>
-            </div>
-            <div class="flex items-start gap-3">
-                <i class="fa-solid fa-phone text-green-900 mt-1"></i>
-                <span class="font-primary text-[14px] text-green-900">023451143</span>
-            </div>
-        </div>
+      </a>
     </div>
+
+    <!-- Navigation Links -->
+    <div class="px-4 py-4 sm:px-6 lg:px-8 ml-[50px]">
+      <h4 class="text-[18px] sm:text-[20px] md:text-[24px] text-green-900  mb-8">NAVIGATION</h4>
+      <ul class="space-y-4 font-secondary">
+        <li><a href="/my-project/index.html/#aboutSection" 
+            class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 ">ABOUT MOKSHYA</a></li>
+        <li><a href="/my-project/index.html/#accomodationSection" 
+            class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 ">ACCOMMODATION</a></li>
+        <li><a href="/my-project/index.html/#foodAndDrinksSectionarget=" 
+            class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 ">FOOD & DRINKS</a></li>
+        <li><a href="/my-project/index.html" 
+            class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 ">HOME</a></li>
+      </ul>
+
+      <hr class="border-green-900 my-8">
+
+      <!-- Location Info -->
+      <h4 class="text-[18px] sm:text-[20px] md:text-[24px] text-green-900  mb-8">LOCATION</h4>
+      <div class="flex items-start gap-3 mb-2">
+        <i class="fa-solid fa-location-dot text-green-800 mt-1"></i>
+        <span class=" text-[14px] text-green-800">Opposite Birta City Hospital, Birtamode Jhapa</span>
+      </div>
+      <div class="flex items-start gap-3">
+        <i class="fa-solid fa-phone text-green-800 mt-1"></i>
+        <span class=" text-[14px] text-green-800">023451143</span>
+      </div>
+    </div>
+
+  </div>
 
 
   <main>
-    <div class="w-full bg-green-900 flex justify-center items-center px-4 py-10">
-      <section class="h-[660px] w-[900px] bg-cream-900 rounded-xl shadow-lg text-center flex px-16 py-15 gap-10 my-10">
-
-        <!-- heading and text -->
-        <div class="w-1/2 h-full flex flex-col text-left pr-8">
+    <!-- booking section -->
+    <div class="w-full bg-green-900 flex justify-center items-center px-4 py-10 ">
+      <section
+        class="w-full max-w-4xl lg:max-w-6xl bg-cream-900 rounded-xl shadow-lg text-center flex flex-col lg:flex-row px-4 py-8 md:px-8 md:py-10 lg:px-12 lg:py-12 gap-6 md:gap-8 lg:gap-10 my-8 md:my-12">
+        <!-- Heading and text -->
+        <div class="w-full lg:w-1/2 flex flex-col text-left lg:pr-4">
           <div class="flex flex-col">
-            <h4 class="text-green-900 font-primary text-3xl font-bold mb-2">Cozy,Comfy & Snug</h4>
-            <span class="font-primary text-sm text-green-800 tracking-widest font-medium mb-8">Book your dream Getaway
-              with Mokshya.</span>
+            <h4 class="text-green-900 font-primary text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-3">Cozy, Comfy
+              & Snug</h4>
+            <span class="font-primary text-sm md:text-base text-green-800 tracking-widest font-medium mb-4 md:mb-6">Book
+              your dream Getaway with Mokshya.</span>
             <hr class="border-green-900">
-            <div>
-              <div class="w-full flex justify-between items-center mt-8 mb-4">
-                <span class="block text-lg text-green-800 font-serif italic">Timings</span>
+            <div class="mt-6 md:mt-8">
+              <div class="w-full flex justify-between items-center mb-4 md:mb-5">
+                <span class="block text-base md:text-lg text-green-800 font-serif italic">Timings</span>
               </div>
-              <div class="flex flex-col gap-3 text-amber-900">
-                <span><b class="tracking-[5px] text-green-700">Check Out:</b> 3 PM.</span>
-                <span><b class="tracking-[5px] text-green-700">Check In:</b> 10 AM TO 12 AM.</span>
-                <span><b class="tracking-[5px] text-green-700">Breakfast:</b> Morning - 7am to 12 noon.</span>
+              <div class="flex flex-col gap-2 md:gap-3 text-amber-900 text-sm md:text-base">
+                <span class="text-green-800"><b class="tracking-[2px]">Check In: </b>10 AM TO 12 AM.</span>
+                <span class="text-green-800"><b class="tracking-[2px]">Check Out: </b>3 PM.</span>
+                <span class="text-green-800"><b class="tracking-[2px]">Breakfast: </b>Morning - 7am to 12
+                  noon.</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- form -->
-        <form action="" class="w-1/2 flex flex-col">
-          <div class="flex flex-col gap-4">
+        <!-- Form -->
+        <form action="" class="w-full lg:w-1/2 flex flex-col">
+          <div class="flex flex-col gap-3 md:gap-4">
             <div class="text-left">
               <label for="name" class="block text-green-800 font-semibold mb-1">Full Name</label>
               <input type="text" name="" id="name" placeholder="Full Name"
-                class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                class="h-12 md:h-[50px] w-full p-3 rounded bg-cream-900 text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
             </div>
-            <div class="flex gap-4">
-              <div class="w-1/2 text-left">
+
+            <div class="flex flex-col md:flex-row gap-3 md:gap-4">
+              <div class="w-full md:w-1/2 text-left">
                 <label for="checkin" class="block text-gray-700 font-semibold mb-1">Check-In</label>
                 <input type="date" id="checkin"
-                  class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                  class="h-12 md:h-[50px] w-full p-3 rounded bg-cream-900 text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
               </div>
-              <div class="w-1/2 text-left">
+              <div class="w-full md:w-1/2 text-left">
                 <label for="checkout" class="block text-gray-700 font-semibold mb-1">Check-Out</label>
                 <input type="date" id="checkout"
-                  class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                  class="h-12 md:h-[50px] w-full p-3 rounded bg-cream-900 text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
               </div>
             </div>
 
             <div class="text-left">
               <label for="phoneNumber" class="block text-gray-700 font-semibold mb-1">Phone Number</label>
               <input type="tel" name="" id="phoneNumber" placeholder="Phone Number"
-                class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                class="h-12 md:h-[50px] w-full p-3 rounded bg-cream-900 text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
             </div>
-            <div class="text-left">
-              <label for="numberOfPeople" class="block text-gray-700 font-semibold mb-1">No of People</label>
-              <input type="number" name="" id="numberOfPeople" placeholder="Number of People"
-                class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
-            </div>
-            <div class="text-left">
-              <label for="roomType" class="block text-gray-700 font-semibold mb-1">Type of Room</label>
-              <input list="typeOfRoom" name="" id="roomType" placeholder="Type of Room"
-                class="h-[50px] w-full p-2 rounded-[10px] bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
-              <datalist id="typeOfRoom">
-                <option value="Junior Suite"></option>
-                <option value="Superior Deluxe Room"></option>
-                <option value="Superior Deluxe Room With Balcony"></option>
-              </datalist>
+
+            <div class="flex flex-col md:flex-row gap-3 md:gap-4">
+              <div class="w-full md:w-1/2 text-left">
+                <label for="numberOfPeople" class="block text-gray-700 font-semibold mb-1">No of People</label>
+                <input type="number" name="" id="numberOfPeople" placeholder="Number of People"
+                  class="h-12 md:h-[50px] w-full p-3 rounded bg-cream-900 text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
+              </div>
+
+              <div class="w-full md:w-1/2 text-left">
+                <label for="roomType" class="block text-gray-700 font-semibold mb-1">Type of Room</label>
+                <input list="typeOfRoom" name="" id="roomType" placeholder="Type of Room"
+                  class="h-12 md:h-[50px] w-full p-3 rounded bg-cream-900 text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
+                <datalist id="typeOfRoom">
+                  <option value="Junior Suite"></option>
+                  <option value="Superior Deluxe Room"></option>
+                  <option value="Superior Deluxe Room With Balcony"></option>
+                </datalist>
+              </div>
             </div>
           </div>
 
-          <!-- submit button -->
+          <!-- Submit button -->
           <div class="mt-6">
-            <a href="" type="submit">
-              <div
-                class="h-[60px] w-[150px] bg-green-900 rounded-full flex items-center justify-center text-cream-900 font-semibold">
-                Submit
-              </div>
-            </a>
+            <button type="submit"
+              class="h-14 w-full sm:w-40 rounded-full flex items-center justify-center text-cream-900 font-semibold mx-auto transition-colors duration-300 bg-green-900">
+              Submit
+            </button>
           </div>
         </form>
       </section>
@@ -198,72 +192,83 @@
   </main>
 
 
-  <!-- footer  -->
-  <footer>
-    <div class="bg-cream-900 w-full px-4 pb-10 py-10">
+  <!-- Footer -->
+  <footer class="">
+    <div class="bg-cream-900 w-full flex flex-col justify-center items-center px-4 pb-10">
       <!-- Logo -->
-      <div class="flex justify-center mb-8">
-        <div class="h-[100px] w-[100px] bg-[url('/src/images/logo/logo.png')] bg-cover bg-center"></div>
+      <div class="">
+        <div class="h-50 w-50 mb-8">
+          <img src="../images/logo/logo.png" alt="logo of mokshya" class="w-full h-full object-contain" />
+        </div>
       </div>
 
       <!-- Footer Links Section -->
-      <div class="w-full flex justify-around">
-
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center  max-w-6xl mx-auto">
         <!-- EAT -->
         <div>
-          <h4 class="font-bold mb-2">EAT</h4>
-          <ul class="space-y-1">
-            <li><a href="#menuSection" class="hover:text-green-950">Menu</a></li>
-            <li><a href="/my-project/index.html/#foodAndDrinksSection" class="hover:text-green-950">Food & Drinks</a></li>
-            <li><a href="#" class="hover:text-green-950">Book a Table</a></li>
+          <h4 class="font-bold mb-3 text-green-900 text-lg">EAT</h4>
+          <ul class="space-y-2">
+            <li><a href="#foodAndDrinksSection" class="text-green-800 transition-colors">Food & Drinks</a>
+            </li>
+            <li><a href="#bookingForm" class="text-green-800 transition-colors">Book a Table</a></li>
           </ul>
         </div>
 
         <!-- AMENITIES -->
         <div>
-          <h4 class="font-bold mb-2">AMENITIES</h4>
-          <ul class="space-y-1">
-            <li><a href="/my-project/index.html/#accomodationSection" class="hover:text-green-950">Accommodation</a></li>
-            <li><a href="/my-project/index.html/#facilitySection" class="hover:text-green-950">Facilities</a></li>
+          <h4 class="font-bold mb-3 text-green-900 text-lg">AMENITIES</h4>
+          <ul class="space-y-2">
+            <li><a href="/my-project/index.html/#accomodationSection"
+                class="text-green-800 transition-colors">Accommodation</a>
+            </li>
+            <li><a href="#/my-project/index.html/#facilitySection"
+                class="text-green-800 transition-colors">Facilities</a></li>
           </ul>
         </div>
 
         <!-- EXPLORE -->
         <div>
-          <h4 class="font-bold mb-2">EXPLORE</h4>
-          <ul class="space-y-1">
-            <li><a href="/my-project/index.html/#aboutSection" class="hover:text-green-950">About Us</a></li>
+          <h4 class="font-bold mb-3 text-green-900 text-lg">EXPLORE</h4>
+          <ul class="space-y-2">
+            <li><a href="/my-project/index.html/#aboutSection" class="text-green-800 transition-colors">About Us</a>
+            </li>
           </ul>
         </div>
 
         <!-- LOCATION -->
         <div>
-          <h4 class="font-bold mb-2">LOCATION</h4>
-          <ul class="space-y-1">
+          <h4 class="font-bold mb-3 text-green-900 text-lg">LOCATION</h4>
+          <ul class="space-y-2 text-green-800">
             <li>Birtamode, Jhapa, Nepal</li>
             <li>+977 9800000000</li>
-            <li>+977 9800002222</li>
           </ul>
         </div>
       </div>
 
       <!-- Social Media Icons -->
       <div class="flex justify-center items-center gap-6 mt-8">
-        <a href="https://www.facebook.com/mokshyabirtamode" target="_blank"><i
-            class="fa-brands fa-facebook text-green-900 text-lg hover:scale-110 transition"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram text-green-900 text-lg hover:scale-110 transition"></i></a>
-        <a href="https://www.tiktok.com/@mokshya_restaurant?_t=ZS-8yb3icgJIri&_r=1" target="_blank"><i
-            class="fa-brands fa-tiktok text-green-900 text-lg hover:scale-110 transition"></i></a>
+        <a href="https://www.facebook.com/mokshyabirtamode" 
+          class="text-green-800 hover:text-green-900 transition-colors">
+          <i class="fa-brands fa-facebook text-2xl social-icon"></i>
+        </a>
+        <a href="#" class="text-green-800 hover:text-green-900 transition-colors">
+          <i class="fa-brands fa-instagram text-2xl social-icon"></i>
+        </a>
+        <a href="https://www.tiktok.com/@mokshya_restaurant?_t=ZS-8yb3icgJIri&_r=1" 
+          class="text-green-800 hover:text-green-900 transition-colors">
+          <i class="fa-brands fa-tiktok text-2xl social-icon"></i>
+        </a>
       </div>
     </div>
   </footer>
 
-  <!-- Dont know what to name it -->
-  <div class="w-full bg-green-900 text-cream-900 flex flex-col items-center justify-center text-xs py-4 text-center">
+  <!-- Copyright -->
+  <div class="w-full bg-green-900 text-cream-800 flex flex-col items-center justify-center text-xs py-4 text-center">
     <span>© Mokshya Restaurant & Bar 2024. All Rights Reserved</span>
-    <span>Created by <a href=""><b>Kta Haru</b></a></span>
+    <span>Created by <a href="../pages/ktaHaru.html" 
+        class="font-bold hover:text-cream-900 transition-colors">Kta Haru</a></span>
   </div>
-
   <script src="../script.js"></script>
 </body>
+
 </html>

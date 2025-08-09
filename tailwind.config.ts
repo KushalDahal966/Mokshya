@@ -5,6 +5,7 @@ const config: Config = {
         './src/pages/menu.html',
         './src/pages/booking.html',
         './src/pages/ktaHaru.html',
+        './src/pages/directions.html',
         './src/**/*.{js,ts,jsx,tsx,vue}',
     ],
     theme: {
@@ -44,4 +45,4 @@ const config: Config = {
     plugins: [],
 }
 
-export default config
+export default config 

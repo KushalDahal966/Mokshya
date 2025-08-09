@@ -4,56 +4,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mokshya is a modern and elegant restaurant website developed as a college project, inspired by the refined design and user experience of https://garden.laviehospitality.com.np/" />
+  <meta name="description"
+    content="Mokshya is a modern and elegant restaurant website developed as a college project, inspired by the refined design and user experience of https://garden.laviehospitality.com.np/" />
   <meta name="author" content="Kuhal Dahal and Team" />
+  <meta name="keywords"
+    content="Mokshya, Mokshya Birtamode, boutique hotel, restaurant Birtamode, beer garden, luxury stay, accommodation Jhapa, food and drinks, fine dining, garden restaurant, ample parking, Birtamode hotel, convenience and facility, peaceful retreat, boutique accommodation Nepal">
+
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-  <!-- favicon -->
 
+  <!-- favicon -->
   <link rel="shortcut icon" href="src/images/logo/logo.png" type="image/x-icon" />
   <!-- font awesome -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- stylesheet -->
 
+  <!-- stylesheet -->
   <link rel="stylesheet" href="src/style.css" />
   <title>Mokshya - Restaurant & Bar</title>
 </head>
 
-<body class="m-0 p-0 font-primary">
+<body class="m-0 p-0 bg-cream-900 font-primary">
 
   <!-- navbar -->
-  <header class="w-full z-10">
-    <nav class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+  <header class="w-full">
+    <nav class="h-16 md:h-24 lg:h-[100px] w-full flex items-center justify-between px-4 sm:px-6 lg:px-8">
 
       <!-- Menu Button -->
-      <a href="#" class="flex-shrink-0" id="menuButton">
+      <a href="src/pages/menu.html"  id="menuButton">
         <div
-          class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
+          class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-12">
           <i class="fa-solid fa-bars text-green-900 text-xs md:text-sm lg:text-base"></i>
-          <span class="hidden md:inline text-green-900 font-bold text-sm">MENU</span>
+          <span class="hidden md:inline text-green-900 text-sm font-semibold">MENU</span>
         </div>
       </a>
 
       <!-- Logo -->
-      <a href="#" class="flex-grow flex justify-center mx-2 md:mx-4">
+      <a href="#" class="">
         <div class="w-16 h-16 md:w-20 md:h-20 lg:w-[100px] lg:h-[100px] xl:w-[120px] xl:h-[120px]">
           <img src="src/images/logo/logo.png" alt="logo of mokshya" class="w-full h-full object-contain" />
         </div>
       </a>
 
       <!-- Booking Button -->
-      <a href="src/pages/booking.html" target="_blank" class="flex-shrink-0">
+      <a href="src/pages/booking.html" >
         <div
-          class="h-10 w-10 md:h-12 md:w-[150px] lg:h-[50px] bg-green-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 mr-2 md:mr-4 lg:mr-[50px]">
+          class="h-10 w-10 md:h-12 md:w-[150px] lg:h-[50px] bg-green-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 mr-2 md:mr-4 lg:mr-12">
           <i class="fa-solid fa-utensils text-cream-900 text-xs md:text-sm lg:text-base"></i>
-          <span class="hidden md:inline text-cream-900 font-bold text-sm">BOOK A TABLE</span>
+          <span class="hidden md:inline text-cream-900 text-sm font-semibold">BOOK A TABLE</span>
         </div>
       </a>
     </nav>
@@ -62,15 +67,15 @@
   <!-- hero-section -->
   <main>
     <div
-      class="relative min-h-[400px] h-[100vh] w-full bg-[url('/src/images/pictures/convenience-and-facility.jpeg')] bg-cover bg-no-repeat bg-center flex items-center justify-center">
+      class="relative h-[400px] sm:h-[70vh] md:h-[60vh] lg:h-[100vh] w-full bg-[url('/src/images/pictures/hero.jpeg')] bg-cover bg-no-repeat bg-center flex items-center justify-center">
 
       <!-- overlay for opacity-->
-      <div class="absolute inset-0 bg-[#000]/40"></div>
+      <div class="absolute inset-0 bg-[#000]/50"></div>
 
       <!-- hero-text -->
-      <div class="hero-text text-cream-900 text-left px-4 z-10">
+      <div class="hero-text text-cream-900 text-left px-4 z-10 font-secondary">
         <span
-          class="block font-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-center uppercase">
+          class="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-center uppercase">
           Wrapped in <br>
           nature's embrace
         </span>
@@ -79,67 +84,73 @@
   </main>
 
   <!-- nagivation section -->
- <div id="navigationLinks" class="h-[100vh] w-full max-w-[600px] fixed inset-0 bg-cream-800 hidden z-50 overflow-y-auto">
+  <div id="navigationLinks"
+    class="w-full h-[100vh] max-w-[600px] fixed inset-0 bg-cream-800 hidden z-50 overflow-y-auto">
 
-  <!-- Top Bar -->
-  <div class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
-    <!-- Close Button -->
-    <a href="#" id="closeMenu">
-      <div class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
-        <i class="fa-solid fa-xmark text-green-900 text-xs md:text-sm lg:text-base"></i>
-        <span class="hidden md:inline text-green-900 font-bold text-sm">CLOSE</span>
+    <!-- Top Bar -->
+    <div class="h-16 md:h-24 lg:h-[100px] w-full bg-cream-900 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+      <!-- Close Button -->
+      <a href="#" id="closeMenu">
+        <div
+          class="h-10 w-10 md:h-12 md:w-[110px] lg:h-[50px] bg-cream-800 rounded-full flex items-center justify-center gap-x-1 md:gap-x-2 ml-2 md:ml-4 lg:ml-[50px]">
+          <i class="fa-solid fa-xmark text-green-900 text-xs md:text-sm lg:text-base"></i>
+          <span class="hidden md:inline text-green-900 font-bold text-sm">CLOSE</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="px-4 py-4 sm:px-6 lg:px-8 ml-[50px]">
+      <h4 class="text-[18px] sm:text-[20px] md:text-[24px] text-green-900  mb-8">NAVIGATION</h4>
+      <ul class="space-y-4 font-secondary">
+        <li><a href="#aboutSection" 
+            class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 ">ABOUT MOKSHYA</a></li>
+        <li><a href="#accomodationSection" 
+            class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 ">ACCOMMODATION</a></li>
+        <li><a href="#foodAndDrinksSection" 
+            class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 ">FOOD & DRINKS</a></li>
+        <li><a href="src/pages/menu.html" 
+            class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 ">OUR MENU</a></li>
+      </ul>
+
+      <hr class="border-green-900 my-8">
+
+      <!-- Location Info -->
+      <h4 class="text-[18px] sm:text-[20px] md:text-[24px] text-green-900  mb-8">LOCATION</h4>
+      <div class="flex items-start gap-3 mb-2">
+        <i class="fa-solid fa-location-dot text-green-800 mt-1"></i>
+        <span class=" text-[14px] text-green-800">Opposite Birta City Hospital, Birtamode Jhapa</span>
       </div>
-    </a>
-  </div>
-
-  <!-- Navigation Links -->
-  <div class="px-4 sm:px-6 lg:px-8 ml-[50px]">
-    <h4 class="text-[18px] sm:text-[20px] md:text-[22px] text-green-900 font-primary mb-8 mt-6">NAVIGATION</h4>
-    <ul class="space-y-4">
-      <li><a href="#aboutSection" class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">ABOUT MOKSHYA</a></li>
-      <li><a href="#accomodationSection" class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">ACCOMMODATION</a></li>
-      <li><a href="#foodAndDrinksSection" class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">FOOD & DRINKS</a></li>
-      <li><a href="#menuSection" class="text-[18px] sm:text-[20px] md:text-[22px] text-green-800 font-secondary">OUR MENU</a></li>
-    </ul>
-
-    <hr class="border-green-900 my-8">
-
-    <!-- Location Info -->
-    <h4 class="text-[18px] sm:text-[20px] md:text-[22px] text-green-900 font-primary mb-4">LOCATION</h4>
-    <div class="flex items-start gap-3 mb-2">
-      <i class="fa-solid fa-location-dot text-green-900 mt-1"></i>
-      <span class="font-primary text-[14px] text-green-900">Opposite Birta City Hospital, Birtamode Jhapa</span>
+      <div class="flex items-start gap-3">
+        <i class="fa-solid fa-phone text-green-800 mt-1"></i>
+        <span class=" text-[14px] text-green-800">023451143</span>
+      </div>
     </div>
-    <div class="flex items-start gap-3">
-      <i class="fa-solid fa-phone text-green-900 mt-1"></i>
-      <span class="font-primary text-[14px] text-green-900">023451143</span>
-    </div>
-  </div>
 
-</div>
+  </div>
 
   <!-- about-section -->
   <section id="aboutSection">
     <!-- image -->
     <div class="bg-cream-800  w-full flex flex-col md:flex-row items-center justify-center px-4 py-10 gap-6 md:gap-12">
       <div
-        class="w-full max-w-[400px] h-[300px] sm:h-[350px] md:h-[400px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-no-repeat bg-cover bg-center rounded-[10px]">
+        class="w-[400px] h-[300px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-no-repeat bg-cover bg-center rounded-[10px]">
       </div>
 
       <!-- text -->
-      <div class="w-full max-w-[400px] h-[300px] font-primary flex flex-col justify-center text-left">
+      <div class="w-full max-w-[400px] flex flex-col justify-center text-left">
         <h2 class="text-[26px] sm:text-[28px] md:text-[30px] font-bold mb-3 text-green-900">ABOUT MOKSHYA</h2>
-        <span class="block text-[18px] sm:text-[20px] md:text-[22px] text-cream-100 mb-4 font-semibold">Every evening
+        <span class="block text-[18px] sm:text-[20px] md:text-[22px] text-green-800 mb-4 font-semibold">Every evening
           turns into a carnival</span>
-        <p class="text-[14px] text-cream-100 mb-3">
+        <p class="text-[14px] text-green-800 mb-3">
           Mokshya, in English, means The Success which stands true as Mokshya Garden is the synonym for celebration of
           life itself.
         </p>
-        <p class="text-[14px] text-cream-100 mb-3">
+        <p class="text-[14px] text-green-800 mb-3">
           From morning coffee to vibrant cocktails, from cozy corners to lively gatherings under the stars, we have the
           perfect setting for any mood.
         </p>
-        <p class="text-[14px] text-cream-100">
+        <p class="text-[14px] text-green-800">
           And the best part? We are just a leisurely ten-minute stroll from Mukti Chowk, Birtamode.
         </p>
       </div>
@@ -150,17 +161,18 @@
   <section id="menuSection">
 
     <!-- image -->
-    <div class="bg-cream-900 w-full flex flex-col md:flex-row items-center justify-center px-4 py-10 gap-6 md:gap-12">
+    <div
+      class="bg-cream-900 w-full flex flex-col-reverse md:flex-row items-center justify-center px-4 py-10 gap-6 md:gap-12">
       <div
-        class="w-full max-w-[400px] h-[300px] sm:h-[350px] md:h-[400px] bg-[url('/src/images/pictures/menu-image.jpg')] bg-no-repeat bg-cover bg-center rounded-[10px]">
+        class="w-[400px] h-[300px] sm:h-[350px] md:h-[400px] bg-[url('/src/images/pictures/menu-image.jpg')] bg-no-repeat bg-cover bg-center rounded-[10px]">
       </div>
 
       <!-- text -->
-      <div class="w-full max-w-[400px] font-primary flex flex-col justify-center text-left">
+      <div class="w-full max-w-[400px]  flex flex-col justify-center text-left">
         <h2 class="text-[26px] sm:text-[28px] md:text-[30px] font-bold mb-3 text-green-900">OUR MENU</h2>
-        <span class="block text-[18px] sm:text-[20px] md:text-[22px] text-cream-100 mb-4 font-semibold">Extensive Menu &
+        <span class="block text-[18px] sm:text-[20px] md:text-[22px] text-green-800 mb-4 font-semibold">Extensive Menu &
           Dreamy Experience</span>
-        <p class="text-[14px] text-cream-100 mb-3">
+        <p class="text-[14px] text-green-800 mb-3">
           Whether you're a local food fanatic or an international cuisine explorer, Lavie Garden has got you covered at
           an irresistibly reasonable price.
         </p>
@@ -168,16 +180,16 @@
     </div>
 
     <!-- Popular Menu Section -->
-    <section class="bg-cream-900 px-4 py-10">
+    <section class="bg-cream-900 px-4 pb-10">
 
-      <!-- Section heading -->
+      <!-- heading -->
       <div class="w-full text-center mb-10">
-        <span class="font-primary text-[14px] text-green-800 block">Choose Delicious</span>
-        <h3 class="font-primary text-[30px] font-bold text-green-900 inline-block">Popular Menu</h3>
+        <span class=" text-[14px] text-green-800 block">Choose Delicious</span>
+        <h3 class=" text-[30px] font-bold text-green-900 inline-block">Popular Menu</h3>
       </div>
 
-      <!-- Grid container -->
-      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- menu items-->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
         <!-- Item 1 -->
         <div class="flex items-center gap-4">
@@ -185,162 +197,157 @@
             class="h-[80px] w-[80px] bg-[url('/src/images/pictures/pani-puri.jpeg')] bg-cover bg-center !rounded-full shrink-0">
           </div>
           <div>
-            <h2 class="font-semibold">Pani Puri</h2>
-            <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel autem ex
-              volu.</p>
+            <h2 class="font-semibold text-green-900">Pani Puri</h2>
+            <p class="text-sm text-gray-700 text-green-800">Crispy puris filled with tangy water, mashed potatoes, and
+              zesty spices — an explosion of flavors in every bite.</p>
           </div>
         </div>
 
         <!-- Item 2 -->
         <div class="flex items-center gap-4">
           <div
-            class="h-[80px] w-[80px] bg-[url('/src/images/pictures/sekuwa.webp')] bg-cover bg-center !rounded-full shrink-0">
+            class="h-[80px] w-[80px] bg-[url('/src/images/pictures/sekuwa.webp')] bg-cover bg-center rounded-full shrink-0">
           </div>
           <div>
-            <h2 class="font-semibold">Sekuwa</h2>
-            <p class="text-sm text-gray-700">Delicious dumplings served with spicy chutney and warm flavors.</p>
+            <h2 class="font-semibold text-green-900">Sekuwa</h2>
+            <p class="text-sm text-green-800">Tender chunks of meat marinated in traditional Nepali spices, flame-roasted
+              for that authentic sekuwa taste.</p>
           </div>
         </div>
 
         <!-- Item 3 -->
-        <div class="flex items-center gap-4 mb-10">
+        <div class="flex items-center gap-4 lg:mb-10">
           <div
-            class="h-[80px] w-[80px] bg-[url('/src/images/pictures/cake.jpg')] bg-cover bg-center !rounded-full shrink-0">
+            class="h-[80px] w-[80px] bg-[url('/src/images/pictures/cake.jpg')] bg-cover bg-center rounded-full shrink-0">
           </div>
           <div>
-            <h2 class="font-semibold">Cake</h2>
-            <p class="text-sm text-gray-700">Stir-fried noodles with veggies and your choice of protein.</p>
+            <h2 class="font-semibold text-green-900">Cake</h2>
+            <p class="text-sm text-green-800">Freshly baked cakes with soft textures and irresistible flavors — perfect
+              for every special moment.</p>
           </div>
         </div>
 
         <!-- Item 4 -->
         <div class="flex items-center gap-4 mb-10">
           <div
-            class="h-[80px] w-[80px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center !rounded-full shrink-0">
+            class="h-[80px] w-[80px] bg-[url('/src/images/pictures/Pizza.jpg')] bg-cover bg-center rounded-full shrink-0">
           </div>
           <div>
-            <h2 class="font-semibold">Pizza</h2>
-            <p class="text-sm text-gray-700">Wood-fired pizza with gooey cheese and your favorite toppings.</p>
+            <h2 class="font-semibold text-green-900">Pizza</h2>
+            <p class="text-sm text-green-800">Wood-fired pizza with gooey cheese and your favorite toppings.</p>
           </div>
         </div>
       </div>
 
       <!-- button  -->
-      <a href="src/pages/menu.html" type="button" target="_blank" class="w-full flex justify-center pt-5">
-        <div class="h-[55px] w-[170px] bg-green-900 rounded-full flex items-center justify-center">
-          <span class="font-primary text-cream-900">VIEW FULL MENU</span>
+      <a href="src/pages/menu.html" type="button"  class="w-full flex justify-center pt-5">
+        <div
+          class="h-[50px] sm:h-[60px] w-[130px] sm:w-[150px] bg-green-900 rounded-full flex items-center justify-center">
+          <span class="text-[14px] text-cream-900">VIEW FULL MENU</span>
         </div>
       </a>
     </section>
 
     <!-- Accomodation Section -->
     <section id="accomodationSection">
-      <div class="min-h-screen w-full bg-cream-800 flex flex-col justify-center items-center px-4 py-10 gap-8">
+      <div class="w-full bg-cream-800 flex flex-col justify-center items-center px-4 py-10 gap-8 shrink-0">
 
-        <!-- Text Content -->
+        <!-- Text -->
         <div class="w-full max-w-[900px] flex flex-col md:flex-row gap-6">
           <!-- Heading -->
           <div class="w-full max-w-[300px]">
-            <h3 class="font-primary text-[14px] text-green-900 mb-2">ACCOMMODATION</h3>
-            <span class="font-primary text-[30px] font-bold text-green-950 leading-tight">
+            <h3 class="text-[14px] text-green-800 mb-2">ACCOMMODATION</h3>
+            <span class="text-[30px] font-bold text-green-900 leading-tight">
               Heavenly <br> Stay <br> Amidst a <br> Green Garden
             </span>
           </div>
 
           <!-- Paragraph -->
           <div class="w-full max-w-[300px] flex items-center">
-            <p class="text-[14px] text-green-900">
+            <p class="text-[14px] text-green-800">
               Leave the day's exhaustion at the door, sink into a luxurious setting and start the morning with the
               chirping sound of the birds, enabling a peaceful beginning.
             </p>
           </div>
         </div>
 
-        <!-- Room Image 1 -->
+        <!-- Junior Suite -->
         <div
-          class="w-full max-w-[900px] h-[300px] bg-[url('/src/images/pictures/junior-suite.jpg')] bg-cover bg-center bg-scroll rounded-[10px] flex items-end justify-between">
-          <!-- text -->
-          <div class="mb-[10px] ml-[20px]">
-            <span class="h-[60px] text-cream-900">Junior Suite</span>
-            <!-- room-features -->
-            <div class="flex items-center justify-start">
-              <div>
+          class="w-full max-w-[900px] h-[300px] bg-[url('/src/images/pictures/junior-suite.jpg')] bg-cover bg-center rounded-[10px] p-4 flex flex-col justify-end">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+            <!-- Text & Features -->
+            <div>
+              <span class="text-cream-900 block mb-1 text-lg font-semibold">Junior Suite</span>
+              <div class="flex items-center gap-3">
                 <i class="fa-solid fa-wifi text-cream-900"></i>
               </div>
             </div>
+
+            <!-- Button -->
+            <a href="src/pages/booking.html" class="sm:self-end" >
+              <div
+                class="h-[50px] sm:h-[60px] w-[130px] sm:w-[150px] bg-green-900 rounded-full flex items-center justify-center">
+                <span class="text-cream-900 text-sm sm:text-base">BOOK NOW</span>
+              </div>
+            </a>
           </div>
-          <!-- button -->
-          <a href="#">
-            <div
-              class="h-[60px] w-[150px] bg-green-900 rounded-full flex items-center justify-center  mb-[10px] mr-[20px]">
-              <span class="text-cream-900">BOOK NOW</span>
-            </div>
-          </a>
         </div>
 
-        <!-- room image 2 -->
+        <!-- Superior Deluxe Room -->
         <div
-          class="w-full max-w-[900px] h-[300px] bg-[url('/src/images/pictures/superior-deluxe.jpg')] bg-cover bg-center rounded-[10px] flex items-end justify-between">
-          <!-- text -->
-          <div class="mb-[10px] ml-[20px]">
-            <span class="h-[60px] text-cream-900">Superior Deluxe Room</span>
-            <!-- room-features -->
-            <div class="flex items-center justify-start gap-[10px]">
-              <div>
+          class="w-full max-w-[900px] h-[300px] bg-[url('/src/images/pictures/superior-deluxe.jpg')] bg-cover bg-center rounded-[10px] p-4 flex flex-col justify-end">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+            <div>
+              <span class="text-cream-900 block mb-1 text-lg font-semibold">Superior Deluxe Room</span>
+              <div class="flex items-center gap-3">
                 <i class="fa-solid fa-wifi text-cream-900"></i>
-              </div>
-              <div>
                 <i class="fa-solid fa-tv text-cream-900"></i>
               </div>
             </div>
+
+            <a href="src/pages/booking.html" class="sm:self-end" >
+              <div
+                class="h-[50px] sm:h-[60px] w-[130px] sm:w-[150px] bg-green-900 rounded-full flex items-center justify-center">
+                <span class="text-cream-900 text-sm sm:text-base">BOOK NOW</span>
+              </div>
+            </a>
           </div>
-          <!-- button -->
-          <a href="#">
-            <div
-              class="h-[60px] w-[150px] bg-green-900 rounded-full flex items-center justify-center  mb-[10px] mr-[20px]">
-              <span class="text-cream-900">BOOK NOW</span>
-            </div>
-          </a>
         </div>
 
-        <!-- room image 3 -->
+        <!-- Superior Deluxe Room with Balcony -->
         <div
-          class="w-full max-w-[900px] h-[300px] bg-[url('/src/images/pictures/Superior-Deluxe-Room-With-Balcony.jpg')] bg-cover bg-center rounded-[10px] flex items-end justify-between">
-          <!-- text -->
-          <div class="mb-[10px] ml-[20px]">
-            <span class="h-[60px] text-cream-900">Superior Deluxe Room With Balcony</span>
-            <!-- room-features -->
-            <div class="flex items-center justify-start gap-[10px]">
-              <div>
+          class="w-full max-w-[900px] h-[300px] bg-[url('/src/images/pictures/Superior-Deluxe-Room-With-Balcony.jpg')] bg-cover bg-center rounded-[10px] p-4 flex flex-col justify-end">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+            <div>
+              <span class="text-cream-900 block mb-1 text-lg font-semibold">Superior Deluxe Room With Balcony</span>
+              <div class="flex items-center gap-3">
                 <i class="fa-solid fa-wifi text-cream-900"></i>
-              </div>
-              <div>
                 <i class="fa-solid fa-tv text-cream-900"></i>
-              </div>
-              <div>
                 <i class="fa-solid fa-bowl-food text-cream-900"></i>
               </div>
             </div>
+
+            <a href="src/pages/booking.html" class="sm:self-end" >
+              <div
+                class="h-[50px] sm:h-[60px] w-[130px] sm:w-[150px] bg-green-900 rounded-full flex items-center justify-center">
+                <span class="text-cream-900 text-sm sm:text-base">BOOK NOW</span>
+              </div>
+            </a>
           </div>
-          <!-- button -->
-          <a href="#">
-            <div
-              class="h-[60px] w-[150px] bg-green-900 rounded-full flex items-center justify-center mb-[10px] mr-[20px]">
-              <span class="text-cream-900">BOOK NOW</span>
-            </div>
-          </a>
         </div>
       </div>
     </section>
 
     <!-- Convenience and Facility -->
     <section id="facilitySection">
-      <div class="w-full bg-cream-800 flex flex-col justify-center items-center px-4 py-10 gap-10">
+      <div class="w-full bg-cream-800 flex flex-col justify-center items-center px-4 pb-10 gap-10">
 
         <!-- Heading -->
-        <div class="text-center w-[900px]">
-          <h3 class="font-primary text-[30px] font-bold text-green-950 leading-tigh">Convenience and Facility</h3>
-          <span class="block text-[14px] sm:text-[18px] md:text-[20px] text-green-900 font-semibold">
+        <div class="text-center w-full max-w-[900px] px-4 break-words">
+          <h3 class="text-[24px] sm:text-[30px] font-bold text-green-900">
+            Convenience and Facility
+          </h3>
+          <span class="block text-[14px] sm:text-[18px] md:text-[20px] text-green-800 font-semibold">
             To spice up your experience and ensure hassle-free stay
           </span>
         </div>
@@ -349,26 +356,26 @@
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <!-- Icon 1 -->
           <div class="flex flex-col items-center gap-2">
-            <i class="fa-solid fa-square-parking text-3xl text-green-900"></i>
-            <span class="text-cream-100 text-sm font-medium">Ample Parking Space</span>
+            <i class="fa-solid fa-square-parking text-3xl text-green-800"></i>
+            <span class="text-green-900 text-sm font-medium">Ample Parking Space</span>
           </div>
 
           <!-- Icon 2 -->
           <div class="flex flex-col items-center gap-2">
-            <i class="fa-solid fa-house text-3xl text-green-900"></i>
-            <span class="text-cream-100 text-sm font-medium">Boutique Accommodation</span>
+            <i class="fa-solid fa-house text-3xl text-green-800"></i>
+            <span class="text-green-900 text-sm font-medium">Boutique Accommodation</span>
           </div>
 
           <!-- Icon 3 -->
           <div class="flex flex-col items-center gap-2">
-            <i class="fa-solid fa-champagne-glasses text-3xl text-green-900"></i>
-            <span class="text-cream-100 text-sm font-medium">Beer Garden</span>
+            <i class="fa-solid fa-champagne-glasses text-3xl text-green-800"></i>
+            <span class="text-green-900 text-sm font-medium">Beer Garden</span>
           </div>
 
           <!-- Icon 4 -->
           <div class="flex flex-col items-center gap-2">
-            <i class="fa-solid fa-square-parking text-3xl text-green-900"></i>
-            <span class="text-cream-100 text-sm font-medium">Ample Parking Space</span>
+            <i class="fa-solid fa-wifi text-3xl text-green-800"></i>
+            <span class="text-green-900 text-sm font-medium">Free Wi-Fi</span>
           </div>
         </div>
 
@@ -381,29 +388,29 @@
 
     <!-- utsav section -->
     <section
-      class="bg-cream-900 w-full mx-auto flex flex-col-reverse md:flex-row justify-center items-center px-4 py-10 gap-10">
+      class="bg-cream-900 w-full mx-auto flex flex-col md:flex-row justify-center items-center px-4 py-10 gap-10">
       <!-- text -->
       <div class="text-center">
         <span
-          class="w-full font-primary text-[28px] sm:text-[36px] md:text-[44px] lg:text-[56px] xl:text-[64px] font-bold block text-green-900">
+          class="w-full  text-[28px] sm:text-[36px] md:text-[44px] lg:text-[56px] xl:text-[64px] font-bold block text-green-900">
           उत्सव महोत्सव <br> बन्छ मोक्षमा
         </span>
       </div>
 
       <!-- image -->
       <div
-        class="w-full max-w-[440px] h-[300px] sm:h-[350px] md:h-[400px] bg-[url('/src/images/pictures/utsav.jpeg')] bg-no-repeat bg-cover bg-center rounded-[10px]">
+        class="w-full max-w-[440px] h-[300px] sm:h-[350px] md:h-[400px] bg-[url('/src/images/pictures/utsav.jpg')] bg-no-repeat bg-cover bg-center rounded-[10px]">
       </div>
     </section>
 
     <!-- reviews section -->
-    <section class="bg-[#f7ebd7]">
-      <div class="max-w-[600px] mx-auto flex flex-col items-center px-4 py-10 gap-6 text-center">
+    <section class="bg-cream-900">
+      <div class="max-w-[600px] mx-auto flex flex-col items-center px-4 pb-10 gap-6 text-center">
 
         <!-- heading -->
         <div>
-          <h3 class="font-primary text-[14px] text-green-800 uppercase">Reviews</h3>
-          <span class="block font-primary text-green-950 text-[24px] sm:text-[28px] md:text-[32px] font-bold">
+          <h3 class=" text-[14px] text-green-800 uppercase font-semibold">Reviews</h3>
+          <span class="block  text-green-950 text-[24px] sm:text-[28px] md:text-[32px] font-bold text-green-900">
             What Our Customers Say
           </span>
         </div>
@@ -415,7 +422,7 @@
 
         <!-- review text -->
         <div>
-          <p class="text-[14px] font-primary sm:text-[16px] text-green-900 leading-relaxed">
+          <p class="text-[14px]  sm:text-[16px] text-green-800 leading-relaxed">
             I had a delightful dining experience. The ambiance was inviting, the service was impeccable,
             and the food was absolutely delicious. Each dish was expertly prepared, showcasing a perfect
             blend of flavors. The staff was attentive and friendly, creating a warm and welcoming atmosphere.
@@ -425,7 +432,7 @@
 
         <!-- customer name -->
         <div>
-          <span class="font-primary text-[14px] sm:text-[16px] font-semibold text-[#D79C37] block">
+          <span class=" text-[14px] sm:text-[16px] font-semibold text-[#D79C37] block">
             Kaka Shree
           </span>
           <span class="text-[14px] sm:text-[16px] font-semibold text-[#D79C37] tracking-[2px]">⭐⭐⭐⭐⭐</span>
@@ -435,159 +442,164 @@
 
     <!-- Food and Drinks Section -->
     <section id="foodAndDrinksSection"
-      class="w-full bg-green-900 flex flex-col items-center justify-center px-4 pt-10 pb-[400px] gap-10 relative">
-
+      class="w-full bg-green-900 flex flex-col items-center justify-center px-4 pt-10 pb-[550px] lg:pb-[400px] gap-10 relative">
       <!-- Heading and Paragraph -->
-      <div class="w-full max-w-[600px] text-center">
-        <h3 class="text-cream-900 font-primary text-[30px]">Food & Drinks</h3>
-        <span class="text-[14px] text-cream-900 font-primary">
+      <div class="w-full max-w-2xl text-center px-4">
+        <h3 class="text-cream-900  text-3xl md:text-4xl font-semibold">Food & Drinks</h3>
+        <p class="text-cream-800  mt-4 text-sm md:text-base max-w-2xl mx-auto">
           From mouthwatering fast food dishes to four-course meals, Mokshya is a foodie paradise.
           And a dedicated Beer garden for both the teetotalers and the tipplers.
-        </span>
+        </p>
       </div>
 
       <!-- Food Images -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full max-w-6xl px-4">
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd1.jpg')] bg-cover bg-center rounded-xl">
         </div>
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd2.jpg')] bg-cover bg-center rounded-xl">
         </div>
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd3.jpg')] bg-cover bg-center rounded-xl">
         </div>
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd4.jpg')] bg-cover bg-center rounded-xl">
         </div>
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd5.jpg')] bg-cover bg-center rounded-xl">
         </div>
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd6.jpg')] bg-cover bg-center rounded-xl">
         </div>
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd7.jpg')] bg-cover bg-center rounded-xl">
         </div>
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd8.jpg')] bg-cover bg-center rounded-xl">
         </div>
         <div
-          class="h-[200px] w-[284px] bg-[url('/src/images/pictures/about-image.jpeg')] bg-cover bg-center rounded-[10px]">
+          class="food-card h-50 w-full bg-[url('/src/images/pictures/fd2.jpg')] bg-cover bg-center rounded-xl">
         </div>
       </div>
 
       <!-- Booking Form -->
-      <section class="absolute bottom-[-330px] left-1/2 transform -translate-x-1/2 h-[660px] w-[900px] bg-[#f7ebd7] rounded-xl shadow-lg text-center flex px-16 py-15 gap-10">
+      <div id="bookingForm"
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-4xl px-4">
+        <section
+          class="w-full bg-cream-900 rounded-xl shadow-xl text-center flex flex-col lg:flex-row px-6 py-8 lg:px-8 lg:py-10 gap-8 lg:gap-10">
+          <!-- Heading and Text -->
+          <div class="w-full lg:w-1/2 flex flex-col text-left lg:pr-6">
+            <div class="flex flex-col">
+              <h4 class="text-green-900  text-2xl lg:text-3xl font-bold mb-3">Hungry for happiness?</h4>
+              <span class=" text-sm text-green-800 tracking-widest font-medium mb-6">Book your table and
+                join the carnival.</span>
 
-        <!-- heading and text -->
-        <div class="w-1/2 h-full flex flex-col text-left pr-8">
-          <div class="flex flex-col">
-            <h4 class="text-green-900 font-primary text-3xl font-bold mb-2">Hungry for happiness?</h4>
-            <span class="font-primary text-sm text-green-800 tracking-widest font-medium mb-8">Book your table and join the
-              carnival.</span>
-            <hr class="border-green-900">
-            <div>
-              <div class="w-full flex justify-between items-center mt-8 mb-4">
-                <span class="block text-lg text-green-800 font-serif italic">Opening Hours</span>
-                <button type="button"
-                  class="h-[55px] w-[150px] border-1 border-green-900 hover:bg-green-900 hover:text-cream-900 rounded-full flex items-center justify-center text-green-900 font-medium transition-colors duration-200">
+              <hr class="border-green-900">
+
+              <div class="mt-6">
+                <div class="w-full flex flex-col items-start justify-start mb-4 gap-4">
+                  <span class="block text-lg text-green-900 font-serif italic">Opening Hours</span>
+                  <div class="flex flex-col gap-3 text-green-900 text-sm md:text-base">
+                    <span><b class="tracking-wide">Breakfast:</b> Morning - 7am to 12 PM.</span>
+                    <span><b class="tracking-wide">Dinner:</b> Evening - 6pm to 10pm.</span>
+                    <span><b class="tracking-wide">Lunch:</b> 12 PM to 2 PM.</span>
+                  </div>
+                </div>
+                <!-- direction button -->
+                <a href="src/pages/directions.html"  type="button"
+                  class="directions-btn h-14 w-full sm:w-40 border border-green-900 rounded-full flex items-center justify-center text-green-900 font-medium transition-colors duration-300 cursor-pointer hover:bg-green-900 hover:text-cream-900 ">
                   Directions
-                </button>
-              </div>
-              <div class="flex flex-col gap-3 text-amber-900">
-                <span><b class="tracking-[5px] text-green-700">Breakfast:</b> Morning - 7am to 12 PM.</span>
-                <span><b class="tracking-[5px] text-green-700">Lunch:</b> 12 PM to 2 PM.</span>
-                <span><b class="tracking-[5px] text-green-700">Dinner:</b> Evening - 6pm to 10pm.</span>
+                </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- form -->
-        <form action="" class="w-1/2 flex flex-col">
-          <div class="flex flex-col gap-4">
-            <div class="text-left">
-              <label for="name" class="block text-green-800 font-semibold mb-1">Full Name</label>
-              <input type="text" name="" id="name" placeholder="Full Name"
-                class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+          <!-- Form -->
+          <form action="" class="w-full lg:w-1/2 flex flex-col">
+            <div class="flex flex-col gap-4">
+              <div class="text-left">
+                <label for="name" class="block text-green-900 font-semibold mb-1">Full Name</label>
+                <input type="text" id="name" placeholder="Full Name"
+                  class="h-12 w-full p-3 rounded text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
+              </div>
+              <div class="text-left">
+                <label for="date" class="block text-green-900 font-semibold mb-1">Date</label>
+                <input type="date" id="date"
+                  class="h-12 w-full p-3 rounded text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
+              </div>
+              <div class="text-left">
+                <label for="phoneNumber" class="block text-green-900 font-semibold mb-1">Phone Number</label>
+                <input type="tel" id="phoneNumber" placeholder="Phone Number"
+                  class="h-12 w-full p-3 rounded text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
+              </div>
+              <div class="text-left">
+                <label for="numberOfPeople" class="block text-green-900 font-semibold mb-1">No of People</label>
+                <input type="number" id="numberOfPeople" placeholder="Number of People"
+                  class="h-12 w-full p-3 rounded text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
+              </div>
+              <div class="text-left">
+                <label for="tableNumber" class="block text-green-900 font-semibold mb-1">Table Number</label>
+                <input type="number" id="tableNumber" placeholder="Table Number"
+                  class="h-12 w-full p-3 rounded text-[#000] border border-green-800 focus:outline-none focus:ring-[1px] focus:ring-green-900">
+              </div>
             </div>
-            <div class="text-left">
-              <label for="date" class="block text-gray-700 font-semibold mb-1">Date</label>
-              <input type="date" name="" id="date"
-                class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
-            </div>
-            <div class="text-left">
-              <label for="phoneNumber" class="block text-gray-700 font-semibold mb-1">Phone Number</label>
-              <input type="tel" name="" id="phoneNumber" placeholder="Phone Number"
-                class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
-            </div>
-            <div class="text-left">
-              <label for="numberOfPeople" class="block text-gray-700 font-semibold mb-1">No of People</label>
-              <input type="number" name="" id="numberOfPeople" placeholder="Number of People"
-                class="h-[50px] w-full p-2 rounded bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
-            </div>
-            <div class="text-left">
-              <label for="tableNumber" class="block text-gray-700 font-semibold mb-1">Table Number</label>
-              <input type="number" name="" id="tableNumber" placeholder="Table Number"
-                class="h-[50px] w-full p-2 rounded-[10px] bg-cream-900 text-black border-[1px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
-            </div>
-          </div>
 
-          <!-- submit button -->
-          <div class="mt-6">
-            <a href="" type="submit">
-              <div class="h-[60px] w-[150px] bg-green-900 rounded-full flex items-center justify-center text-cream-900 font-semibold">
+            <!-- Submit Button -->
+            <div class="mt-6">
+              <button type="submit"
+                class="submit-btn h-14 w-full sm:w-40 bg-green-900 rounded-full flex items-center justify-center text-cream-900 font-semibold mx-auto  cursor-pointer">
                 Submit
-              </div>
-            </a>
-          </div>
-        </form>
-      </section>
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
     </section>
 
-    <!-- footer  -->
-    <footer>
-      <div class="bg-cream-900 w-full px-4 pb-10 pt-100">
+    <!-- Footer -->
+    <footer class="pt-[550px] lg:pt-[400px]">
+      <div class="bg-cream-900 w-full flex flex-col justify-center items-center px-4 pb-10">
         <!-- Logo -->
-        <div class="flex justify-center mb-8">
-          <div class="h-[100px] w-[100px] bg-[url('/src/images/logo/logo.png')] bg-cover bg-center"></div>
+        <div class="">
+          <div class="h-50 w-50 mb-8">
+            <img src="src/images/logo/logo.png" alt="logo of mokshya" class="w-full h-full object-contain" />
+          </div>
         </div>
 
         <!-- Footer Links Section -->
-        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center place-items-center">
-
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center  max-w-6xl mx-auto">
           <!-- EAT -->
           <div>
-            <h4 class="font-bold mb-2">EAT</h4>
-            <ul class="space-y-1">
-              <li><a href="#menuSection" class="hover:text-green-950">Menu</a></li>
-              <li><a href="#foodAndDrinksSection" class="hover:text-green-950">Food & Drinks</a></li>
-              <li><a href="#" class="hover:text-green-950">Book a Table</a></li>
+            <h4 class="font-bold mb-3 text-green-900 text-lg">EAT</h4>
+            <ul class="space-y-2">
+              <li><a href="src/pages/menu.html" class="text-green-800 transition-colors">Menu</a></li>
+              <li><a href="#foodAndDrinksSection" class="text-green-800 transition-colors">Food & Drinks</a></li>
+              <li><a href="#bookingForm" class="text-green-800 transition-colors">Book a Table</a></li>
             </ul>
           </div>
 
           <!-- AMENITIES -->
           <div>
-            <h4 class="font-bold mb-2">AMENITIES</h4>
-            <ul class="space-y-1">
-              <li><a href="#accomodationSection" class="hover:text-green-950">Accommodation</a></li>
-              <li><a href="#facilitySection" class="hover:text-green-950">Facilities</a></li>
+            <h4 class="font-bold mb-3 text-green-900 text-lg">AMENITIES</h4>
+            <ul class="space-y-2">
+              <li><a href="#accomodationSection" class="text-green-800 transition-colors">Accommodation</a></li>
+              <li><a href="#facilitySection" class="text-green-800 transition-colors">Facilities</a></li>
             </ul>
           </div>
 
           <!-- EXPLORE -->
           <div>
-            <h4 class="font-bold mb-2">EXPLORE</h4>
-            <ul class="space-y-1">
-              <li><a href="#aboutSection" class="hover:text-green-950">About Us</a></li>
+            <h4 class="font-bold mb-3 text-green-900 text-lg">EXPLORE</h4>
+            <ul class="space-y-2">
+              <li><a href="#aboutSection" class="text-green-800 transition-colors">About Us</a></li>
             </ul>
           </div>
 
           <!-- LOCATION -->
           <div>
-            <h4 class="font-bold mb-2">LOCATION</h4>
-            <ul class="space-y-1">
+            <h4 class="font-bold mb-3 text-green-900 text-lg">LOCATION</h4>
+            <ul class="space-y-2 text-green-800">
               <li>Birtamode, Jhapa, Nepal</li>
               <li>+977 9800000000</li>
             </ul>
@@ -596,21 +608,28 @@
 
         <!-- Social Media Icons -->
         <div class="flex justify-center items-center gap-6 mt-8">
-          <a href="https://www.facebook.com/mokshyabirtamode" target="_blank"><i
-              class="fa-brands fa-facebook text-green-900 text-lg hover:scale-110 transition"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram text-green-900 text-lg hover:scale-110 transition"></i></a>
-          <a href="https://www.tiktok.com/@mokshya_restaurant?_t=ZS-8yb3icgJIri&_r=1" target="_blank"><i
-              class="fa-brands fa-tiktok text-green-900 text-lg hover:scale-110 transition"></i></a>
+          <a href="https://www.facebook.com/mokshyabirtamode" 
+            class="text-green-800 hover:text-green-900 transition-colors">
+            <i class="fa-brands fa-facebook text-2xl social-icon"></i>
+          </a>
+          <a href="#" class="text-green-800 hover:text-green-900 transition-colors">
+            <i class="fa-brands fa-instagram text-2xl social-icon"></i>
+          </a>
+          <a href="https://www.tiktok.com/@mokshya_restaurant?_t=ZS-8yb3icgJIri&_r=1" 
+            class="text-green-800 hover:text-green-900 transition-colors">
+            <i class="fa-brands fa-tiktok text-2xl social-icon"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- Dont know what to name it -->
-    <div class="w-full bg-green-900 text-cream-900 flex flex-col items-center justify-center text-xs py-4 text-center">
+    <!-- Copyright -->
+    <div class="w-full bg-green-900 text-cream-800 flex flex-col items-center justify-center text-xs py-4 text-center">
       <span>© Mokshya Restaurant & Bar 2024. All Rights Reserved</span>
-      <span>Created by <a href=""><b>Kta Haru</b></a></span>
+      <span>Created by <a href="src/pages/ktaHaru.html"  class="font-bold hover:text-cream-900 transition-colors">Kta Haru</a></span>
     </div>
 
     <script src="src/script.js"></script>
 </body>
+
 </html>
