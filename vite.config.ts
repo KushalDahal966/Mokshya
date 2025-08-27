@@ -4,12 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  server: {
-    // prevent Vite from always serving index.html
-    fs: {
-      allow: ['.'],
-    }
-  },
+  appType: 'mpa',   // 👈 this disables SPA fallback
   build: {
     rollupOptions: {
       input: {
