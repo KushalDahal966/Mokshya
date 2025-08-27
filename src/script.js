@@ -3,31 +3,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigationLinks = document.getElementById('navigationLinks');
   const closeMenu = document.getElementById('closeMenu');
 
-  console.log('menuButton:', menuButton);
-  console.log('navigationLinks:', navigationLinks);
-  console.log('closeMenu:', closeMenu);
-
+  // Get all links inside navigation overlay
   const allNavLinks = navigationLinks ? navigationLinks.querySelectorAll('a') : [];
 
+  // Function to close the overlay
   function closeOverlay() {
-    if (navigationLinks) navigationLinks.classList.add('hidden');
+    if (navigationLinks) {
+      navigationLinks.classList.add('hidden');
+    }
     document.body.classList.remove('overflow-hidden');
   }
 
-  if (menuButton) {
+  // Open menu overlay
+  if (menuButton && navigationLinks) {
     menuButton.addEventListener('click', () => {
-      console.log('menu clicked'); // check if click fires
-      navigationLinks?.classList.remove('hidden');
+      console.log('Menu button clicked!'); // <-- Debug log
+      navigationLinks.classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
     });
   }
 
+  // Close overlay when clicking close button
   if (closeMenu) {
-    closeMenu.addEventListener('click', () => {
+    closeMenu.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent navigation
       closeOverlay();
     });
   }
 
+  // Close overlay when clicking any link inside the overlay
   allNavLinks.forEach(link => {
     link.addEventListener('click', () => {
       closeOverlay();
