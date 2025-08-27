@@ -1,29 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const menuButton = document.getElementById('menuButton');
-  const navigationLinks = document.getElementById('navigationLinks');
-  const closeMenu = document.getElementById('closeMenu');
+  // Elements
+  const menuButton = document.getElementById('menuButton');       // Menu open button
+  const navigationLinks = document.getElementById('navigationLinks'); // Overlay container
+  const closeMenu = document.getElementById('closeMenu');         // Close button inside overlay
 
-  // Get all links inside navigationLinks
+  // Get all links inside overlay
   const allNavLinks = navigationLinks ? navigationLinks.querySelectorAll('a') : [];
 
+  // Function to close overlay
   function closeOverlay() {
     if (navigationLinks) {
-      navigationLinks.classList.add('hidden');
+      navigationLinks.classList.add('hidden'); // hide overlay
     }
-    document.body.classList.remove('overflow-hidden');
+    document.body.classList.remove('overflow-hidden'); // re-enable scrolling
   }
 
-  // Menu open
+  // -------------------
+  // Open Menu Button
+  // -------------------
   if (menuButton) {
     menuButton.addEventListener('click', (e) => {
-      // only prevent default if it's actually a <a>
+      // Only prevent default if it's an <a> tag
       if (menuButton.tagName.toLowerCase() === 'a') e.preventDefault();
       navigationLinks?.classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
     });
   }
 
-  // Close on close button
+  // -------------------
+  // Close Button inside overlay
+  // -------------------
   if (closeMenu) {
     closeMenu.addEventListener('click', (e) => {
       if (closeMenu.tagName.toLowerCase() === 'a') e.preventDefault();
@@ -31,10 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Close on any link click (but still allow navigation)
+  // -------------------
+  // Close overlay when any link inside is clicked
+  // -------------------
   allNavLinks.forEach(link => {
     link.addEventListener('click', () => {
       closeOverlay();
+      // Navigation still works because we do NOT prevent default
     });
   });
 });
